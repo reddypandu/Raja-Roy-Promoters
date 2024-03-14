@@ -4,6 +4,7 @@
   --secondary: #846026;
   --light: #f2f2f2;
   --dark: #1d2833;
+  --light-red: #cb4154;
 }
 
 /*** Spinner ***/
@@ -176,7 +177,7 @@ h6,
   background: url(/img/mango\ farm\ mango\ 123.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 108vh !important;
+  height: 100%;
   max-width: 100% !important;
   /* background: url(../img/bg-round.png), url(../img/bg-round-2.png),
     url(../img/bg-square.png), url(../img/bg-line.png),
@@ -190,7 +191,7 @@ h6,
   background: url(/img/hero-image.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 108vh !important;
+
   max-width: 100% !important;
 }
 @media (max-width: 992px) {
@@ -366,12 +367,15 @@ body
 
 /*** Footer ***/
 .footer {
-  background: url(../img/bg-round.png), url(../img/bg-round-2.png),
+  /* background: url(../img/bg-round.png), url(../img/bg-round-2.png),
     url(../img/bg-square.png), url(../img/bg-line.png),
     url(../img/bg-bottom-footer.png);
   background-position: 0px 112px, right 0 bottom 0, left 50% top 80px,
     left 50% bottom 0, top center;
+  background-repeat: no-repeat; */
+  background: url(/img/mango\ farm\ mango\ 123.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer p {
@@ -440,6 +444,175 @@ body
   padding-right: 0;
   border-right: none;
 }
-.left-align {
-  float: left; /* Float the image to the left */
-  margin-right: 20px;
+
+/*hero section css*/
+.owl-carousel.hero-carousel .owl-stage {
+  height: 100vh;
+}
+
+.owl-carousel .owl-stage-outer {
+  height: 100vh;
+}
+
+.hero-header2 .row {
+  padding: 4rem;
+}
+
+.hero-header1 .row {
+  padding: 4rem;
+}
+
+.hero-header1 .row .content,
+.hero-header2 .row .content {
+  padding-block: 9rem;
+}
+
+.hero-header2 .hero-img {
+  padding-block: 4rem;
+}
+
+@media (max-width: 992px) {
+  .hero-header2 .row {
+    padding: 0.2rem !important;
+  }
+
+  .hero-header1 .row {
+    padding: 0.2rem !important;
+  }
+
+  .hero-header1 .row .content,
+  .hero-header2 .row .content {
+    padding-block: 0.5rem !important;
+  }
+
+  .hero-header2 .hero-img {
+    padding-block: 1rem;
+  }
+}
+
+@keyframes mangotree {
+  0% {
+    transform: rotate(5deg) translateX(-15px) translateY(-10vh);
+  }
+
+  50% {
+    transform: rotate(0deg) translateX(0px) translateY(-10vh);
+  }
+
+  100% {
+    transform: rotate(-5deg) translateX(-15px) translateY(-10vh);
+  }
+}
+/*mangos*/
+.mangos {
+  position: relative;
+}
+
+.mangos .mangooos {
+  position: absolute;
+  top: 30%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+}
+
+.mangos .mangooos .mango {
+  width: 50px;
+}
+
+.mangos .mangooos .mango1 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 1s infinite;
+}
+
+.mangos .mangooos .mango2 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 19s infinite;
+}
+
+.mangos .mangooos .mango3 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 11s infinite;
+}
+
+.mangos .mangooos .mango4 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 6s infinite;
+}
+
+.mangos .mangooos .mango5 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 9s infinite;
+}
+
+.mangos .mangooos .mango6 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 14s infinite;
+}
+
+.mangos .mangooos .mango7 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 3s infinite;
+}
+
+.mangos .mangooos .mango8 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 18s infinite;
+}
+
+.mangos .mangooos .mango9 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 15s infinite;
+}
+
+.mangos .mangooos .mango10 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 2s infinite;
+}
+
+.mangos .mangooos .mango11 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 7s infinite;
+}
+
+.mangos .mangooos .mango12 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 10s infinite;
+}
+
+.mangos .mangooos .mango13 img {
+  width: 100%;
+  opacity: 0.2;
+  animation: mango 5s infinite;
+}
+
+@keyframes mango {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0.2;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(100vh);
+  }
+}
