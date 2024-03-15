@@ -367,12 +367,15 @@ body
 
 /*** Footer ***/
 .footer {
-  background: url(../img/bg-round.png), url(../img/bg-round-2.png),
+  /* background: url(../img/bg-round.png), url(../img/bg-round-2.png),
     url(../img/bg-square.png), url(../img/bg-line.png),
     url(../img/bg-bottom-footer.png);
   background-position: 0px 112px, right 0 bottom 0, left 50% top 80px,
     left 50% bottom 0, top center;
+  background-repeat: no-repeat; */
+  background: url(/img/mango\ farm\ mango\ 123.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer p {
