@@ -31,6 +31,13 @@
     rgba(255, 255, 255, 0)
   );
 }
+:root {
+  --primary: #ffd041;
+  --secondary: #846026;
+  --light: #f2f2f2;
+  --dark: #1d2833;
+  --light-red: #cb4154;
+}
 *,
 *::before,
 *::after {
@@ -5938,6 +5945,15 @@ fieldset:disabled .btn {
 }
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.services .shadow {
+  box-shadow: 2px 2px 4px var(--primary), -2px -2px 4px var(--primary) !important;
+  transition: all 1s;
+}
+.services .shadow:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 20px var(--primary) !important;
+  border-bottom-right-radius: 10rem !important;
 }
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
