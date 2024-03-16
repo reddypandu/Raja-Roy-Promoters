@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #96ff00;
+  --primary: #ffd041;
   --secondary: #846026;
   --light: #f2f2f2;
   --dark: #1d2833;
@@ -62,6 +62,7 @@
 
 .call i {
   font-size: 2rem;
+  color: var(--primary);
 }
 .footer-logo img {
   width: 100%;
@@ -695,7 +696,7 @@ body
 }
 
 .business .col-lg-3:nth-child(3) .clients {
-  background-color: #96ff00;
+  background-color: var(--primary);
   padding: 3rem;
 
   text-align: center;
@@ -714,8 +715,8 @@ body
   border-bottom-left-radius: 5px;
   padding: 12px 24px;
   color: white;
-  background-color: #cb4154;
-  border-color: #cb4154;
+  background-color: #ffd041;
+  border-color: #ffd041;
 }
 
 .read-more a {
