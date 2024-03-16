@@ -37,7 +37,7 @@
   position: fixed;
   right: 0;
   top: 20%;
-  background-color: #cb4154;
+  background-color: #ffd041;
   z-index: 999;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -515,7 +515,7 @@ body
 }
 
 .hero-header2 .hero-img {
-  padding-block: 4rem;
+  padding-block: 1rem;
 }
 
 @media (max-width: 992px) {
