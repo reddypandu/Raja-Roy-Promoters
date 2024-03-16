@@ -20,7 +20,52 @@
   visibility: visible;
   opacity: 1;
 }
+.footer-logo {
+  width: 150px;
+}
+.call {
+  position: fixed;
+  right: 20px;
+  top: 70%;
+  background-color: #cb4154;
+  z-index: 999;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
 
+.whatsapp {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  background-color: #cb4154;
+  z-index: 999;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.whatsapp a .vertical {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  font-size: 15px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-inline: 10px;
+  color: white;
+}
+
+.whatsapp a {
+  transform: rotate(360deg);
+  width: 100%;
+  height: 100%;
+}
+
+.call i {
+  font-size: 2rem;
+}
+.footer-logo img {
+  width: 100%;
+}
 .back-to-top {
   position: fixed;
   display: none;
