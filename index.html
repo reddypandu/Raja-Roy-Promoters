@@ -236,11 +236,28 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/co-founder.jpeg">
+                        <img class="img-fluid wow zoomIn owner" data-wow-delay="0.5s" src="img/co-founder.jpeg">
                     </div>
                 </div>
             </div>
         </div>
+        <style>
+            .owner {
+                border-top: 2px solid green;
+                border-left: 2px solid #cb4154;
+                border-right: 2px solid red;
+                border-bottom: 2px solid #cb4154;
+            }
+
+            .owner::before {
+                content: '';
+                top: -20px;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                background-color: red;
+            }
+        </style>
         <!-- About End -->
         <div class="call">
             <a href="tel:+918885667888">
@@ -248,30 +265,36 @@
             </a>
         </div>
         <!--videos-->
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
             <div class="container py-md-5 py-4">
                 <h3 class="title-style text-center mb-5"></h3>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bg-clr-white hover-box">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-sm-12 col-lg-8 v">
-                                    <video width="100%" controls>
-                                        <source src="./img/raja-roy-video.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
 
-                                </div>
-
+                            <div class="col-sm-12 col-lg-12 v">
+                                <video width="100%" autoplay>
+                                    <source src="./img/raja-roy-video.mp4" type="video/mp4">
+                                    <source src="./img/raja-roy-video.gg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video>
 
                             </div>
+
+
                         </div>
                     </div>
-
                 </div>
+
             </div>
-        </div>
+        </div> -->
+
         <!--videos-->
+        <video width="100%" controls>
+            <source src="./img/raja-roy-video.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
 
         <!-- Pricing Start -->
         <div class="container-xxl py-5 services">
@@ -383,12 +406,8 @@
                 </div>
             </div>
         </div>
+
         <!-- About End -->
-
-
-
-
-
         <div class="container-xxl py-5 business">
             <div class="container px-lg-5">
                 <div class="row">
