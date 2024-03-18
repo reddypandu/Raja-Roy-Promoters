@@ -152,7 +152,7 @@ h6,
 
 /*** Navbar ***/
 .navbar-light {
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: ; */
 }
 .navbar-light .navbar-nav .nav-link {
   position: relative;
@@ -275,7 +275,6 @@ h6,
 }
 
 body > div > div.container-xxl.position-relative.p-0 > div > div > div.owl-nav {
-  z-index: 999;
 }
 body
   > div
@@ -285,8 +284,8 @@ body
   > div.owl-nav
   > div.owl-prev {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #f2f2f28a;
   border: 1px solid var(--primary);
   top: 50%;
@@ -296,6 +295,7 @@ body
   justify-content: center;
   color: white;
   font-size: 25px;
+  z-index: 9999;
 }
 body
   > div
@@ -305,8 +305,8 @@ body
   > div.owl-nav
   > div.owl-next {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #f2f2f28a;
   top: 50%;
   right: 5px;
@@ -315,6 +315,8 @@ body
   justify-content: center;
   color: white;
   font-size: 25px;
+  z-index: 9999;
+
   border: 1px solid var(--primary);
 }
 /*** Section Title ***/
@@ -572,17 +574,20 @@ body
 /*mangos*/
 .mangos {
   position: relative;
+  width: 80%;
+  margin: auto;
 }
 
 .mangos .mangooos {
   position: absolute;
   top: 30%;
-  z-index: 9999;
+  z-index: 99;
+  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 80%;
-  margin: auto;
+  height: 100vh;
 }
 
 .mangos .mangooos .mango {
