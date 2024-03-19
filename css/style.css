@@ -4,6 +4,7 @@
   --light: #f2f2f2;
   --dark: #1d2833;
   --light-red: #cb4154;
+  --green: #162411;
 }
 
 /*** Spinner ***/
@@ -157,7 +158,7 @@ h6,
 .navbar-light .navbar-nav .nav-link {
   position: relative;
   margin-left: 25px;
-  padding: 35px 0;
+  padding: 12px 20px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff !important;
@@ -168,13 +169,13 @@ h6,
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-  padding: 20px 0;
+  padding: 12px 20px;
   color: var(--dark) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: var(--primary) !important;
+  color: var(--green) !important;
 }
 
 .navbar-light .navbar-brand h1 {
@@ -225,7 +226,19 @@ h6,
     left: 0;
     z-index: 999;
   }
-
+  .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    background-color: #ffd041;
+    -webkit-clip-path: polygon(
+      50% 0,
+      90% 30%,
+      90% 70%,
+      50% 100%,
+      10% 70%,
+      10% 30%
+    );
+    clip-path: polygon(50% 0, 90% 30%, 90% 70%, 50% 100%, 10% 70%, 10% 30%);
+  }
   .sticky-top.navbar-light {
     position: fixed;
     background: #ffffff;
@@ -443,7 +456,7 @@ body
   background-position: 0px 112px, right 0 bottom 0, left 50% top 80px,
     left 50% bottom 0, top center;
   background-repeat: no-repeat; */
-  background-color: #131d3b;
+  background-color: var(--green);
 }
 
 .footer p {
@@ -738,8 +751,8 @@ body
   border-bottom-left-radius: 5px;
   padding: 12px 24px;
   color: white;
-  background-color: #ffd041;
-  border-color: #ffd041;
+  background-color: var(--green);
+  border-color: var(--green);
 }
 
 .read-more a {
