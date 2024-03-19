@@ -255,7 +255,7 @@ h6,
 }
 /*** Hero Header ***/
 .hero-header1 {
-  background: url(/img/mango\ farm\ mango\ 123.jpeg);
+  background: url(/img/hero-slider1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -269,7 +269,7 @@ h6,
 }
 
 .hero-header2 {
-  background: url(/img/hero-image.jpeg);
+  background: url(/img/hero-slider2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 
