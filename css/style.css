@@ -4,7 +4,7 @@
   --light: #f2f2f2;
   --dark: #1d2833;
   --light-red: #cb4154;
-  --green: #162411;
+  --green: green;
 }
 
 /*** Spinner ***/
@@ -157,27 +157,32 @@ h6,
 }
 .navbar-light .navbar-nav .nav-link {
   position: relative;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   padding: 12px 20px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff !important;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
   transition: 0.5s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
   padding: 12px 20px;
-  color: var(--dark) !important;
+
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: var(--green) !important;
+  color: var(--light);
+  background-color: var(--green);
 }
-
+.sticky-top.navbar-light .navbar-nav .nav-link:hover,
+.sticky-top.navbar-light .navbar-nav .nav-link.active {
+  color: var(--light);
+  background-color: var(--green);
+}
 .navbar-light .navbar-brand h1 {
   color: #ffffff;
 }
@@ -207,6 +212,7 @@ h6,
     padding: 10px 0;
     margin-left: 0;
     color: var(--dark) !important;
+
   }
 
   .navbar-light .navbar-brand h1 {
@@ -249,17 +255,24 @@ h6,
   }
 }
 .hero-header {
-  background: url(../img/hero-image.jpeg);
+  background: url(../img/hero-slider2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-header-open{
+  background: url(../img/open-plots\ \(2\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 /*** Hero Header ***/
 .hero-header1 {
-  background: url(../img/hero-slider1.jpeg);
+  background: url(../img/farm\ \(3\).jpeg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-  max-width: 100% !important;
+  min-height: 100vh !important;
+  max-width: 100%;
+  
   /* background: url(../img/bg-round.png), url(../img/bg-round-2.png),
     url(../img/bg-square.png), url(../img/bg-line.png),
     url(../img/bg-bottom-hero.png);
@@ -269,11 +282,24 @@ h6,
 }
 
 .hero-header2 {
-  background: url(../img/hero-slider2.jpeg);
+  background: url(../img/open-plots\ \(3\).jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 
-  max-width: 100% !important;
+  max-width: 100% ;
+  min-height: 100vh !important;
+}
+.hero-header3 {
+  background: url(../img/investment.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100% ;
+  min-height: 100vh !important;
+}
+.hero-header1,.hero-header2,.hero-header3{
+  display: grid;
+  place-items: center;
 }
 @media (max-width: 992px) {
   .hero-header1 {
@@ -283,6 +309,7 @@ h6,
     height: 100% !important;
   }
 }
+
 .breadcrumb-item + .breadcrumb-item::before {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -527,13 +554,8 @@ body
 }
 
 /*hero section css*/
-.owl-carousel.hero-carousel .owl-stage {
-  height: 100vh;
-}
 
-.owl-carousel.hero-carousel .owl-stage-outer {
-  height: 100vh;
-}
+
 
 .hero-header2 .row {
   padding: 4rem;
@@ -546,6 +568,9 @@ body
 .hero-header1 .row .content,
 .hero-header2 .row .content {
   padding-block: 9rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
 }
 
 .hero-header2 .hero-img {
