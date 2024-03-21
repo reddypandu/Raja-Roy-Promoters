@@ -123,16 +123,19 @@
       },
     },
   });
-//   var portfolioIsotope = $('.portfolio-container').isotope({
-//     itemSelector: '.portfolio-item',
-//     layoutMode: 'fitRows'
-// });
-// $('#portfolio-flters li').on('click', function () {
-//     $("#portfolio-flters li").removeClass('active');
-//     $(this).addClass('active');
-
-//     portfolioIsotope.isotope({filter: $(this).data('filter')});
-// });
+  $(document).ready(function(){
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 2000,
+            easing: 'easeInQuad',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
 
 })(jQuery);
 function filterProducts(category,button) {

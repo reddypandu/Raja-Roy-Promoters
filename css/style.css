@@ -773,7 +773,7 @@ body
 }
 
 .business .col-lg-3 .clients span,
-.business .col-lg-3 .clients h5 {
+.business .col-lg-3 .clients h5,h3 {
   color: white;
 }
 
@@ -859,4 +859,13 @@ body
   color: white;
   background-color: var(--primary);
   font-weight: 600;
+}
+.why-us div {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.219);
+  transition: 3s all;
+}
+
+.why-us div:hover {
+  box-shadow:inset 3px 3px 6px #ffd041,inset -3px -3px 6px #ffd041;
+  transform: scale(1.1);
 }
