@@ -302,6 +302,27 @@ h6,
   background-position: center;
  
 }
+.hero-header-konapur{
+  background: url(../img/open4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+.hero-header-navya{
+  background: url(../img/open2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+.hero-header-Royalstone{
+  background: url(../img/open5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
 /*** Hero Header ***/
 .hero-header1 {
   background: url(../img/farm\ \(3\).jpeg);
