@@ -773,7 +773,7 @@ body
 }
 
 .business .col-lg-3 .clients span,
-.business .col-lg-3 .clients h5 {
+.business .col-lg-3 .clients h5,h3 {
   color: white;
 }
 
