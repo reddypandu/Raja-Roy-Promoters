@@ -806,3 +806,36 @@ body
 .services img {
   width: 100%;
 }
+/*projects css*/
+.container-fluid.details{
+  padding-top: 2rem;
+  max-width: 1200px;
+}
+.order_list li {
+  padding-left: 30px;
+  position: relative;
+  list-style-type: none;
+}
+.order_list li a {
+  font-size: 14px;
+  font-family: "Nunito";
+  color: #484848;
+  line-height: 2.857;
+}
+.flaticon-tick:before {
+  content: "✔";
+}
+.order_list li a span {
+  color: var(--green);
+  left: 0;
+  position: absolute;
+}
+.application_statics  img{
+  max-width: 100%;
+}
+.brochure a{
+  padding: 12px 20px;
+  color: white;
+  background-color: var(--primary);
+  font-weight: 600;
+}
