@@ -61,7 +61,16 @@
 
 
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="./projects.html" class="nav-item nav-link">Projects</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="./royal-stone-sadashivpet.html" class="dropdown-item ">Royal Stone</a>
+                                <a href="./navya-milestone-sadasivpet.html" class="dropdown-item">Navya Milestone</a>
+                                <a href="./konapur-sadasivpet.html" class="dropdown-item">Konapur</a>
+                                <a href="./mango-farm-house-sadashivpet.html" class="dropdown-item">Mango Farm House</a>
+                            </div>
+                        </div>
+                       
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0">
@@ -72,13 +81,94 @@
                         </div>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="./book-a-free-visit.html" class="nav-item nav-link">Book A Free Visit</a>
+                        <div class="nav-item dropdown book-free-visit">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book A Free Visit</a>
+                            <div class="dropdown-menu m-0 free-visit">
+                              
+                                    <div class="container">
+                                        <div class="row mb-3 section-title position-relative text-center"
+                                            data-wow-delay="0.1s" >
+                                            <h1 class="mb-3" style="font-size: 20px;">Contact For Any Query</h1>
+                                        </div>
+                                        <div class="row g-5">
+                                            <div class="col-lg-12 col-md-6">
+                                                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                                    <form action="">
+                                                        <div class="row g-3">
+                                                            <div class="col-md-12">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                                                    <label for="name">Your Name</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="email"
+                                                                        placeholder="Your Email" required>
+                                                                    <label for="email">Your Email</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="number" placeholder="Enter Your Number" required>
+                                                                    <label for="number">Enter Your Number</label>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-12">
+                                                                <button class="btn btn-primary w-100" type="submit">Send Message</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                        </div>
+                       
                     </div>
                     
                     
                 </div>
             </nav>
+<style>
+    .book-free-visit{
+       
+    }
+    .book-free-visit .nav-link.dropdown-toggle{
+        clip-path: none;
+        background-color: green;
+        border-radius: 20px;
+    }
+    #navbarCollapse > div > div.nav-item.dropdown.book-free-visit > a{
+        clip-path: none;
+        background-color: green;
+        border-radius: 20px;
+    }
 
+   
+    .book-free-visit .free-visit{
+       width: 300px;
+       left: -100px;
+    }
+    .book-free-visit .free-visit button{
+background-color: green;
+    }
+    .book-free-visit .free-visit .form-floating > .form-control,
+    .book-free-visit .free-visit .form-floating > .form-select {
+  height: calc(3rem + 2px);
+  padding: 1rem 0.75rem;
+}
+.book-free-visit .free-visit.form-floating > .form-control:focus ~ label,
+.book-free-visit .free-visit .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.book-free-visit .free-visit .form-floating > .form-select ~ label {
+  opacity: 0.65;
+  transform: scale(0.6) translateY(-0.5rem) translateX(0.05rem);
+}
+</style>
             <div class="container-xxl" style="padding: 0 !important;">
                 <div class="owl-carousel hero-carousel">
                     <div class="hero-header1 container " style="">
@@ -218,7 +308,7 @@
 
 <!--Projects-->
 
-<section id="best-property p-5" class="best-propert our-project" style="padding-top:0;">
+<section id="best-property p-5" class="best-propert our-project container" style="padding-top:0;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-lg-12">
@@ -238,9 +328,10 @@
         </div>
 		<div class="row">
 
-			<div class="col-md-4  border-0 project" data-category="btn2">
+			<div class="col-md-4   project" data-category="btn2">
+                <div class="content">
 				<div class="col text-center">
-					<img src="./img/royal-stone-logo.jpeg" height="200" style="object-fit: contain; object-position: center; " alt="" class="card-img">
+					<img src="./img/royal-stone-logo.jpeg" height="200"  alt="" class="card-img">
 					
 				</div>
 				<div class="col d-flex justify-content-end flex-column">
@@ -259,7 +350,7 @@
 					</div>
 					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
 						<p class=" ">Plot Sizes</p>
-						<p class=" ">
+						<p class="" style="font-size: 15px;">
 							<strong>146 & 170 & 222 & 266 & 300 & 369 Sq.Yards</strong>
 						</p>
 					</div>
@@ -267,66 +358,24 @@
 					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
 						<p class=" ">Site Visit</p>
 						<p class=" ">
-							<a href="tel:+918885667888" style="background-color: #070707; color:#fff; padding:3px 15px 5px 15px;">call</a>
+							<a href="tel:+918885667888" class="call-btn" >call</a>
 						</p>
 					</div>
 					<div class=" row my-2  d-flex justify-content-between align-items-center">
 
-
 						<div class="col-12">
-							<a href="#" class=" text-center" style=" display:block; background-color:#B20008; color:#fff; font-weight:600; width: 100%; padding:10px 0px; "> View Project</a>
+							<a href="#" class=" text-center project-btn" > View Project</a>
 						</div>
 
 					</div>
 				</div>
-
+            </div>
 			</div>
-			<div class="col-md-4  border-0 second  project" data-category="btn2">
+			
+			<div class="col-md-4    project" data-category="btn2">
+                <div class="content">
 				<div class="col">
-					<img src="./img/navya-stone-logo.png" height="200" style="object-fit: contain; object-position: center; " alt="" class="card-img">
-					
-				</div>
-				<div class="col d-flex justify-content-end flex-column">
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Location</p>
-						<p class=" ">
-							<strong>Kamkole, Sadashivpet
-							</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Total Area</p>
-						<p class=" ">
-							<strong>7 Acres</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Plot Sizes</p>
-						<p class=" ">
-							<strong>183 & 178 & 183 & 199 & 219 & 279 & 393 & 493 Sq. yards</strong>
-						</p>
-					</div>
-					
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Site Visit</p>
-						<p class=" ">
-							<a href="+918885667888" style="background-color: #070707; color:#fff; padding:3px 15px 5px 15px;">call</a> 
-						</p>
-					</div>
-					<div class=" row my-2  d-flex justify-content-between align-items-center">
-
-
-						<div class="col-12">
-							<a href="https://esrprojects.com/esr-heights" class=" text-center" style=" display:block; background-color:#B20008; color:#fff; font-weight:600; width: 100%; padding:10px 0px; "> View Project</a>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-			<div class="col-md-4  border-0 first project" data-category="btn2">
-				<div class="col">
-					<img src="./img/konapur-logo.png" height="200" style="object-fit: contain; object-position: center; " alt="" class="card-img">
+					<img src="./img/konapur-logo.png" height="200"  alt="" class="card-img">
 					
 				</div>
 				<div class="col d-flex justify-content-end flex-column">
@@ -353,23 +402,24 @@
 					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
 						<p class=" ">Site Visit</p>
 						<p class=" ">
-							<a href="+918885667888" style="background-color: #070707; color:#fff; padding:3px 15px 5px 15px;">call</a> 
+							<a href="+918885667888" class="call-btn">call</a> 
 						</p>
 					</div>
 					<div class=" row my-2  d-flex justify-content-between align-items-center">
 
 
 						<div class="col-12">
-							<a href="https://esrprojects.com/esr-sai-kshetra" onclick="opencontact()" class=" text-center" style=" display:block; background-color:#B20008; color:#fff; font-weight:600; width: 100%; padding:10px 0px; "> View Project</a>
+							<a href=""  class=" text-center project-btn" > View Project</a>
 						</div>
 
 					</div>
 				</div>
-
+            </div>
 			</div>
-            <div class="col-md-4  border-0 second project" data-category="btn3">
+            <div class="col-md-4  project" data-category="btn3">
+                <div class="content">
 				<div class="col">
-					<img src="./img/mango-farm-logo.jpeg" width="100%" style="object-fit: cover; object-position: center; " alt="" class="card-img">
+					<img src="./img/mango-farm-logo.jpeg" height="200"  alt="" class="card-img">
 					
 				</div>
 				<div class="col d-flex justify-content-end flex-column">
@@ -397,17 +447,61 @@
 					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
 						<p class=" ">Site Visit</p>
 						<p class=" ">
-							<a href="+918885667888" style="background-color: #070707; color:#fff; padding:3px 15px 5px 15px;">call</a>
+							<a href="+918885667888" class="call-btn">call</a>
 						</p>
 					</div>
 					<div class=" row my-2  d-flex justify-content-between align-items-center">
 						<div class="col-12">
-							<a href="https://esrprojects.com/south-central" class=" text-center" style=" display:block; background-color:#B20008; color:#fff; font-weight:600; width: 100%; padding:10px 0px; "> View Project</a>
+							<a href="" class=" text-center project-btn" > View Project</a>
 						</div>
 
 					</div>
 				</div>
+            </div>
+			</div>
+            <div class="col-md-4   project" data-category="btn2">
+                <div class="content">
+				<div class="col">
+					<img src="./img/navya-stone-logo.png" height="200"  alt="" class="card-img">
+					
+				</div>
+				<div class="col d-flex justify-content-end flex-column">
+					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
+						<p class=" ">Location</p>
+						<p class=" ">
+							<strong>Kamkole, Sadashivpet
+							</strong>
+						</p>
+					</div>
+					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
+						<p class=" ">Total Area</p>
+						<p class=" ">
+							<strong>7 Acres</strong>
+						</p>
+					</div>
+					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
+						<p class=" ">Plot Sizes</p>
+						<p class=" ">
+							<strong>183 & 178 & 183 & 199 & 219 & 279 & 393 & 493 Sq. yards</strong>
+						</p>
+					</div>
+					
+					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
+						<p class=" ">Site Visit</p>
+						<p class=" ">
+							<a href="+918885667888" class="call-btn">CALL</a> 
+						</p>
+					</div>
+					<div class=" row my-2  d-flex justify-content-between align-items-center">
 
+
+						<div class="col-12">
+							<a href="" class=" text-center project-btn" > View Project</a>
+						</div>
+
+					</div>
+				</div>
+            </div>
 			</div>
 		</div>
 	</div>
@@ -415,46 +509,45 @@
 
 
 <style>
-    #portfolio-flters{
-        display: inline-flex;
-    }
-    #portfolio-flters li{
-        cursor: pointer;
-    }
-    #portfolio-flters li.active{
-border-bottom: 1px solid green;
-    }
-    .our-team {
+    .project{
         
-        border-radius: 10px;
+    }
+    .project .content{
+box-shadow: 4px 4px 8px green, -4px -4px 8px green;
+margin-block: 5px;
+transition: 2s all;
+overflow: hidden;
+border-radius: 5px;
+    }
+    .project:hover .content{
+        transform: scale(1.04);
+       border-top-left-radius: 5rem;
+       border-bottom-right-radius: 5rem;
+       border-top-right-radius: 1rem;
+       border-bottom-left-radius: 1rem;
+    }
+    .project .content .col{
+        padding-inline: 5px;
+    }
+    .project img{
+object-fit: contain;
+object-position: center;
+overflow: hidden;
     }
 
-    .our-team img {
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        object-position: center;
-
-    }
-
-    .our-team .detail {
-        background-color: #b12120;
-        padding: 10px;
-        border-radius: 0px 0px 10px 10px;
-        color: #fff;
-    }
-
-    .our-team .detail h4 {
-        font-weight: 600;
-        font-size: 26px;
-        margin-bottom: 0;
-    }
-
-    .our-team .detail p {
-        color: #fff;
-        margin-bottom: 0px;
-    }
+.project .project-btn{
+    display: block;
+    background-color: green;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.project .call-btn{
+    background-color: #ffd041;
+    padding: 3px 15px 5px 15px;
+    color:green;
+}
 </style>
         <!-- Pricing Start -->
         <div class="container-xxl py-5 services" style="background-color: #162411;">

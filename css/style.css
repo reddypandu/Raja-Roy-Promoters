@@ -25,14 +25,18 @@
 }
 .call {
   position: fixed;
-  right: 20px;
-  top: 20%;
+  left: 20px;
+  top: 30%;
   background-color: #cb4154;
   z-index: 999;
   padding: 0.6rem;
   border-radius: 50%;
 }
-
+@media(max-width:992px){
+  .call{
+    display: none;
+  }
+}
 .whatsapp {
   position: fixed;
   right: 100px;
@@ -280,6 +284,21 @@ h6,
     center bottom -1px;
   background-repeat: no-repeat; */
 }
+
+#portfolio-flters{
+  display: inline-flex;
+}
+#portfolio-flters li{
+  cursor: pointer;
+}
+#portfolio-flters li.active{
+border-bottom: 1px solid green;
+}
+.our-team {
+  
+  border-radius: 10px;
+}
+
 
 .hero-header2 {
   background: url(../img/open-plots\ \(3\).jpeg);
