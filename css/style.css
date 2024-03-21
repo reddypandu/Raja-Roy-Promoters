@@ -259,14 +259,27 @@ h6,
   }
 }
 .hero-header {
-  background: url(../img/hero-slider2.jpeg);
+  background: url(../img/farm\ \(6\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-header-open{
-  background: url(../img/open-plots\ \(2\).jpeg);
+.hero-header-gallery{
+  background: url(../img/farmplotsimage2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.hero-header-invest{
+  background: url(../img/invest200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
+.hero-header-contact{
+  background: url(../img/mangotree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
 }
 /*** Hero Header ***/
 .hero-header1 {
@@ -388,6 +401,14 @@ body
   left: 0;
   border-top: 1px solid #5a5a5a;
   border-bottom: 1px solid #5a5a5a;
+}
+.gallery .col-lg-4{
+  
+  height: 300px;
+}
+.gallery .col-lg-4 img{
+ object-fit: cover;
+  height: 100%;
 }
 
 .section-title::after {
