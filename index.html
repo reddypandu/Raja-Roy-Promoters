@@ -1,928 +1,1204 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Home - Raja Roy Pramotors</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/logo1.png" rel="icon">
+    <link href="img/logo1.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+      </div>
+      <!-- Spinner End -->
 
+      <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3">
+          <a href="" class="navbar-brand p-0">
+            <img src="./img/logo.jpeg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+              <a href="/" class="nav-item nav-link active">Home </a>
 
-       
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 ">
-                <a href="" class="navbar-brand p-0">
-                    <img src="./img/logo.jpeg" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="/" class="nav-item nav-link active ">Home
-                        </a>
-
-
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="./royal-stone-sadashivpet.html" class="dropdown-item ">Royal Stone</a>
-                                <a href="./navya-milestone-sadasivpet.html" class="dropdown-item">Navya Milestone</a>
-                                <a href="./konapur-sadasivpet.html" class="dropdown-item">Konapur</a>
-                                <a href="./mango-farm-house-sadashivpet.html" class="dropdown-item">Mango Farm House</a>
-                            </div>
-                        </div>
-                       
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="./open-plots.html" class="dropdown-item ">Open Plots</a>
-                                <a href="./farm-lands.html" class="dropdown-item">Farm-Lands</a>
-                                <a href="./investments.html" class="dropdown-item">Investments</a>
-                            </div>
-                        </div>
-                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <div class="nav-item dropdown book-free-visit">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book A Free Visit</a>
-                            <div class="dropdown-menu m-0 free-visit">
-                              
-                                    <div class="container">
-                                        <div class="row mb-3 section-title position-relative text-center"
-                                            data-wow-delay="0.1s" >
-                                            <h1 class="mb-3" style="font-size: 20px;">Contact For Any Query</h1>
-                                        </div>
-                                        <div class="row g-5">
-                                            <div class="col-lg-12 col-md-6">
-                                                <div class="wow fadeInUp" data-wow-delay="0.2s">
-                                                    <form action="">
-                                                        <div class="row g-3">
-                                                            <div class="col-md-12">
-                                                                <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                                                    <label for="name">Your Name</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <div class="form-floating">
-                                                                    <input type="email" class="form-control" id="email"
-                                                                        placeholder="Your Email" required>
-                                                                    <label for="email">Your Email</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="number" placeholder="Enter Your Number" required>
-                                                                    <label for="number">Enter Your Number</label>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="col-12">
-                                                                <button class="btn btn-primary w-100" type="submit">Send Message</button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                              
-                            </div>
-                        </div>
-                       
-                    </div>
-                    
-                    
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Projects</a
+                >
+                <div class="dropdown-menu m-0">
+                  <a href="./royal-stone-sadashivpet.html" class="dropdown-item"
+                    >Royal Stone</a
+                  >
+                  <a
+                    href="./navya-milestone-sadasivpet.html"
+                    class="dropdown-item"
+                    >Navya Milestone</a
+                  >
+                  <a href="./konapur-sadasivpet.html" class="dropdown-item"
+                    >Konapur</a
+                  >
+                  <a
+                    href="./mango-farm-house-sadashivpet.html"
+                    class="dropdown-item"
+                    >Mango Farm House</a
+                  >
                 </div>
-            </nav>
-<style>
-    
-</style>
-            <div class="container-xxl" style="padding: 0 !important;">
-                <div class="owl-carousel hero-carousel">
-                    <div class="hero-header1 container " style="">
+              </div>
 
-                        <div class="row g-5">
-                            <div class="col-lg-12 content   text-center ">
-                                <h1 class="display-4 text-white mb-4 animated slideInLeft">Welcome to the
-                                    RAJA ROY PRAMOTORS</h1>
-                                <p class="text-white animated slideInLeft">WE ARE GIVING THE BEST TO MAKE YOUR
-                                    DREAMS
-                                </p>
-                                <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Contact
-                                    Us</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Services</a
+                >
+                <div class="dropdown-menu m-0">
+                  <a href="./open-plots.html" class="dropdown-item"
+                    >Open Plots</a
+                  >
+                  <a href="./farm-lands.html" class="dropdown-item"
+                    >Farm-Lands</a
+                  >
+                  <a href="./investments.html" class="dropdown-item"
+                    >Investments</a
+                  >
+                </div>
+              </div>
+              <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <div class="nav-item dropdown book-free-visit">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Book A Free Visit</a
+                >
+                <div class="dropdown-menu m-0 free-visit">
+                  <div class="container">
+                    <div
+                      class="row mb-3 section-title position-relative text-center"
+                      data-wow-delay="0.1s"
+                    >
+                      <h1 class="mb-3" style="font-size: 20px">
+                        Contact For Any Query
+                      </h1>
+                    </div>
+                    <div class="row g-5">
+                      <div class="col-lg-12 col-md-6">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                          <form action="">
+                            <div class="row g-3">
+                              <div class="col-md-12">
+                                <div class="form-floating">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Your Name"
+                                    required
+                                  />
+                                  <label for="name">Your Name</label>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-floating">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Your Email"
+                                    required
+                                  />
+                                  <label for="email">Your Email</label>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="number"
+                                    placeholder="Enter Your Number"
+                                    required
+                                  />
+                                  <label for="number">Enter Your Number</label>
+                                </div>
+                              </div>
+
+                              <div class="col-12">
+                                <button
+                                  class="btn btn-primary w-100"
+                                  type="submit"
+                                >
+                                  Send Message
+                                </button>
+                              </div>
                             </div>
-                            <!-- <div class="col-lg-6 text-center  text-lg-start ">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <style></style>
+        <div class="container-xxl" style="padding: 0 !important">
+          <div class="owl-carousel hero-carousel">
+            <div class="hero-header1 container" style="">
+              <div class="row g-5">
+                <div class="col-lg-12 content text-center">
+                  <h1 class="display-4 text-white mb-4 animated slideInLeft">
+                    Welcome to the RAJA ROY PRAMOTORS
+                  </h1>
+                  <p class="text-white animated slideInLeft">
+                    WE ARE GIVING THE BEST TO MAKE YOUR DREAMS
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft"
+                    >Contact Us</a
+                  >
+                </div>
+                <!-- <div class="col-lg-6 text-center  text-lg-start ">
                                 <img class="img-fluid animated zoomIn hero-image"
                                     src="./img/image01-removebg-preview.png" alt="">
                             </div> -->
-                        </div>
+              </div>
+            </div>
+            <div class="hero-header2 container" style="">
+              <div class="row g-5">
+                <div class="col-lg-12 content text-center">
+                  <h1 class="display-4 text-white mb-4 animated slideInLeft">
+                    Welcome to the RAJA ROY PRAMOTORS
+                  </h1>
+                  <p class="text-white animated slideInLeft">
+                    WE ARE GIVING THE BEST TO MAKE YOUR DREAMS
+                  </p>
 
-                    </div>
-                    <div class="hero-header2 container" style="">
-                        <div class="row g-5">
-                            <div class="col-lg-12 content  text-center ">
-                                <h1 class="display-4 text-white mb-4 animated slideInLeft">Welcome to the
-                                    RAJA ROY PRAMOTORS</h1>
-                                <p class="text-white animated slideInLeft">WE ARE GIVING THE BEST TO MAKE YOUR
-                                    DREAMS
-                                </p>
-
-                                <a href="./contact.html"
-                                    class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Contact
-                                    Us</a>
-                            </div>
-                            <!-- <div class="col-lg-6 text-center text-lg-start  hero-img">
+                  <a
+                    href="./contact.html"
+                    class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft"
+                    >Contact Us</a
+                  >
+                </div>
+                <!-- <div class="col-lg-6 text-center text-lg-start  hero-img">
                                 <img class="img-fluid animated zoomIn hero-image" src="./img/coustomer_review_man2.png"
                                     alt="">
                             </div> -->
-                        </div>
-                    </div>
-                    
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Navbar & Hero End -->
-        <style>
+      </div>
+      <!-- Navbar & Hero End -->
+      <style></style>
 
-
-
-        </style>
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3"
-                                placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
+      <!-- Full Screen Search Start -->
+      <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content" style="background: rgba(29, 40, 51, 0.8)">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn bg-white btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-        </div>
-        <!-- Full Screen Search End -->
-
-
-
-
-        <!-- About Start -->
-        <div class="container-xxl invest pt-5" style="background-color: #ffd041;">
-            <div class="container px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-4">
-                            <h2 class="mb-2">WELCOME TO THE RAJA ROY PRAMOTORS –</h2>
-                        </div>
-                        <div class=" mb-4 pb-4">
-                            <h5 class="mb">CHAIRMAN & MANAGING DIRECTOR–</h5>
-                            <h2>E.A.KONDA</h2>
-                        </div>
-                        <p class="mb-4">At Raja Roy Pramotors, we’re renowned for crafting exceptional living spaces
-                            that blend innovation, quality, and sustainability. Our commitment to excellence, ethical
-                            practices, and customer satisfaction drives us to create iconic villas, contemporary
-                            apartments, and strategic open plot developments. Join us in redefining real estate and
-                            shaping the future of vibrant communities.</p>
-                        <p class="mb-4">Having a unique experience in the real estate field for the last 25 years, Mr.
-                            E.A. Konda has accomplished the level of professionalism. He has earned thousands of
-                            customer’s satisfactions with his enormous services by providing them with a golden chance
-                            of establishing their own houses through “Raja Roy Pramotors”. His down to earth nature made
-                            him stand as a brand in the market and fetched an extensive success through many projects
-                            and has become a role model for many people. </p>
-
-                        <div class="row g-3">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div
-                                    class="rounded text-center  d-flex justify-content-center align-content-center gap-3">
-                                    <i class="fa fa-award fa-2x text-white mb-2"></i>
-
-                                    <p class="mb-0">
-                                        Certified Company</p>
-                                </div>
-                                <button class="read-more"> <a href="./about.html"> Read More</a></button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <img class="img-fluid wow zoomIn owner" data-wow-delay="0.5s"
-                            src="img/SIRPHOTO.png">
-                    </div>
-                </div>
+            <div
+              class="modal-body d-flex align-items-center justify-content-center"
+            >
+              <div class="input-group" style="max-width: 600px">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-light p-3"
+                  placeholder="Type search keyword"
+                />
+                <button class="btn btn-light px-4">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- Full Screen Search End -->
 
-        <!-- About End -->
-        <div class="call">
-            <a href="tel:+918885667888">
-                <i class="fa fa-phone-alt"></i>
-            </a>
+      <!-- About Start -->
+      <div class="container-xxl invest pt-5" style="background-color: #ffd041">
+        <div class="container px-lg-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="section-title position-relative mb-4 pb-4">
+                <h2 class="mb-2">WELCOME TO THE RAJA ROY PRAMOTORS –</h2>
+              </div>
+              <div class="mb-4 pb-4">
+                <h5 class="mb">CHAIRMAN & MANAGING DIRECTOR–</h5>
+                <h2>E.A.KONDA</h2>
+              </div>
+              <p class="mb-4">
+                At Raja Roy Pramotors, we’re renowned for crafting exceptional
+                living spaces that blend innovation, quality, and
+                sustainability. Our commitment to excellence, ethical practices,
+                and customer satisfaction drives us to create iconic villas,
+                contemporary apartments, and strategic open plot developments.
+                Join us in redefining real estate and shaping the future of
+                vibrant communities.
+              </p>
+              <p class="mb-4">
+                Having a unique experience in the real estate field for the last
+                25 years, Mr. E.A. Konda has accomplished the level of
+                professionalism. He has earned thousands of customer’s
+                satisfactions with his enormous services by providing them with
+                a golden chance of establishing their own houses through “Raja
+                Roy Pramotors”. His down to earth nature made him stand as a
+                brand in the market and fetched an extensive success through
+                many projects and has become a role model for many people.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                  <div
+                    class="rounded text-center d-flex justify-content-center align-content-center gap-3"
+                  >
+                    <i class="fa fa-award fa-2x text-white mb-2"></i>
+
+                    <p class="mb-0">Certified Company</p>
+                  </div>
+                  <button class="read-more">
+                    <a href="./about.html"> Read More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <img
+                class="img-fluid wow zoomIn owner"
+                data-wow-delay="0.5s"
+                src="img/SIRPHOTO.png"
+              />
+            </div>
+          </div>
         </div>
+      </div>
 
+      <!-- About End -->
+      <div class="call">
+        <a href="tel:+918885667888">
+          <i class="fa fa-phone-alt"></i>
+        </a>
+      </div>
 
-        <!--videos-->
-        <video width="100%" controls>
-            <source src="./img/raja-roy-video.mp4" type="video/mp4">
+      <!--videos-->
+      <video width="100%" controls>
+        <source src="./img/raja-roy-video.mp4" type="video/mp4" />
 
-            Your browser does not support the video tag.
-        </video>
+        Your browser does not support the video tag.
+      </video>
 
+      <!--Projects-->
 
-<!--Projects-->
-
-<section id="best-property p-5" class="best-propert our-project container" style="padding-top:0;">
-	<div class="container ">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="main-title ">
-					<h2 class="wow bounceInDown text-center" data-wow-duration="2s" data-wow-delay="0s" style="visibility: visible; animation-duration: 2s; animation-delay: 0s;">Our Projects</h2>
-				</div>
-			</div>
-		</div>
-        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+      <section
+        id="best-property p-5"
+        class="best-propert our-project container"
+        style="padding-top: 0"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main-title">
+                <h2
+                  class="wow bounceInDown text-center"
+                  data-wow-duration="2s"
+                  data-wow-delay="0s"
+                  style="
+                    visibility: visible;
+                    animation-duration: 2s;
+                    animation-delay: 0s;
+                  "
+                >
+                  Our Projects
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-12 text-center">
-                <ul class="list-inline mb-5" id="portfolio-flters">
-                    <li class="mx-2 active" id="btn1" onclick="filterProducts('btn1',this)">All</li>
-                    <li class="mx-2" id="btn2" onclick="filterProducts('btn2',this)">Completed Projects</li>
-                    <li class="mx-2" id="btn3" onclick="filterProducts('btn3',this)">Ongoing Projects</li>
-                </ul>
+              <ul class="list-inline mb-5" id="portfolio-flters">
+                <li
+                  class="mx-2 active"
+                  id="btn1"
+                  onclick="filterProducts('btn1',this)"
+                >
+                  All
+                </li>
+                <li
+                  class="mx-2"
+                  id="btn2"
+                  onclick="filterProducts('btn2',this)"
+                >
+                  Completed Projects
+                </li>
+                <li
+                  class="mx-2"
+                  id="btn3"
+                  onclick="filterProducts('btn3',this)"
+                >
+                  Ongoing Projects
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 project" data-category="btn2">
+              <div class="content">
+                <div class="col text-center">
+                  <img
+                    src="./img/royal-stone-logo.jpeg"
+                    height="200"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+                <div class="col d-flex justify-content-end flex-column">
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Location</p>
+                    <p class=" ">
+                      <strong>Kamkole, Sadashivpet </strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Total Area</p>
+                    <p class=" ">
+                      <strong>16.05 Acres</strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Plot Sizes</p>
+                    <p class="" style="font-size: 15px">
+                      <strong
+                        >146 & 170 & 222 & 266 & 300 & 369 Sq.Yards</strong
+                      >
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Site Visit</p>
+                    <p class=" ">
+                      <a href="tel:+918885667888" class="call-btn">call</a>
+                    </p>
+                  </div>
+                  <div
+                    class="row my-2 d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-12">
+                      <a
+                        href="./royal-stone-sadashivpet.html"
+                        class="text-center project-btn"
+                      >
+                        View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 project" data-category="btn2">
+              <div class="content">
+                <div class="col">
+                  <img
+                    src="./img/konapur-logo.png"
+                    height="200"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+                <div class="col d-flex justify-content-end flex-column">
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Location</p>
+                    <p class=" ">
+                      <strong>Konapur, Sadashivpet </strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Total Area</p>
+                    <p class=" ">
+                      <strong>15 Acres</strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Plot Sizes</p>
+                    <p class=" ">
+                      <strong>165 & 180 & 200 Sq. Yards </strong>
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Site Visit</p>
+                    <p class=" ">
+                      <a href="+918885667888" class="call-btn">call</a>
+                    </p>
+                  </div>
+                  <div
+                    class="row my-2 d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-12">
+                      <a
+                        href="./konapur-sadasivpet.html"
+                        class="text-center project-btn"
+                      >
+                        View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 project" data-category="btn3">
+              <div class="content">
+                <div class="col">
+                  <img
+                    src="./img/mango-farm-logo.jpeg"
+                    height="200"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+                <div class="col d-flex justify-content-end flex-column">
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Location</p>
+                    <p class=" ">
+                      <strong> Kamkole, China Chelmeda, Sadashivpet </strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Total Area</p>
+                    <p class=" ">
+                      <strong>134 Acres</strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Plot Sizes</p>
+                    <p class=" ">
+                      <strong>3,4,5,6 and 7.5 Guntas</strong>
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Site Visit</p>
+                    <p class=" ">
+                      <a href="+918885667888" class="call-btn">call</a>
+                    </p>
+                  </div>
+                  <div
+                    class="row my-2 d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-12">
+                      <a
+                        href="./mango-farm-house-sadashivpet.html"
+                        class="text-center project-btn"
+                      >
+                        View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 project" data-category="btn2">
+              <div class="content">
+                <div class="col">
+                  <img
+                    src="./img/navya-stone-logo.png"
+                    height="200"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+                <div class="col d-flex justify-content-end flex-column">
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Location</p>
+                    <p class=" ">
+                      <strong>Kamkole, Sadashivpet </strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Total Area</p>
+                    <p class=" ">
+                      <strong>7 Acres</strong>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Plot Sizes</p>
+                    <p class=" ">
+                      <strong
+                        >183 & 178 & 183 & 199 & 219 & 279 & 393 & 493 Sq.
+                        yards</strong
+                      >
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between pt-3"
+                    style="border-bottom: 2px solid #070707"
+                  >
+                    <p class=" ">Site Visit</p>
+                    <p class=" ">
+                      <a href="+918885667888" class="call-btn">CALL</a>
+                    </p>
+                  </div>
+                  <div
+                    class="row my-2 d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-12">
+                      <a
+                        href="./navya-milestone-sadasivpet.html"
+                        class="text-center project-btn"
+                      >
+                        View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-		<div class="row">
+      </section>
 
-			<div class="col-md-4   project" data-category="btn2">
-                <div class="content">
-				<div class="col text-center">
-					<img src="./img/royal-stone-logo.jpeg" height="200"  alt="" class="card-img">
-					
-				</div>
-				<div class="col d-flex justify-content-end flex-column">
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Location</p>
-						<p class=" ">
-							<strong>Kamkole, Sadashivpet
-							</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Total Area</p>
-						<p class=" ">
-							<strong>16.05 Acres</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Plot Sizes</p>
-						<p class="" style="font-size: 15px;">
-							<strong>146 & 170 & 222 & 266 & 300 & 369 Sq.Yards</strong>
-						</p>
-					</div>
-					
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Site Visit</p>
-						<p class=" ">
-							<a href="tel:+918885667888" class="call-btn" >call</a>
-						</p>
-					</div>
-					<div class=" row my-2  d-flex justify-content-between align-items-center">
+      <style>
+        .project {
+        }
+        .project .content {
+          box-shadow: 4px 4px 8px green, -4px -4px 8px green;
+          margin-block: 5px;
+          transition: 2s all;
+          overflow: hidden;
+          border-radius: 5px;
+        }
+        .project:hover .content {
+          transform: scale(1.04);
+          border-top-left-radius: 5rem;
+          border-bottom-right-radius: 5rem;
+          border-top-right-radius: 1rem;
+          border-bottom-left-radius: 1rem;
+        }
+        .project .content .col {
+          padding-inline: 5px;
+        }
+        .project img {
+          object-fit: contain;
+          object-position: center;
+          overflow: hidden;
+        }
 
-						<div class="col-12">
-							<a href="./royal-stone-sadashivpet.html" class=" text-center project-btn" > View Project</a>
-						</div>
-
-					</div>
-				</div>
-            </div>
-			</div>
-			
-			<div class="col-md-4    project" data-category="btn2">
-                <div class="content">
-				<div class="col">
-					<img src="./img/konapur-logo.png" height="200"  alt="" class="card-img">
-					
-				</div>
-				<div class="col d-flex justify-content-end flex-column">
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Location</p>
-						<p class=" ">
-							<strong>Konapur, Sadashivpet
-							</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Total Area</p>
-						<p class=" ">
-							<strong>15 Acres</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Plot Sizes</p>
-						<p class=" ">
-							<strong>165 & 180 & 200 Sq. Yards </strong>
-						</p>
-					</div>
-					
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Site Visit</p>
-						<p class=" ">
-							<a href="+918885667888" class="call-btn">call</a> 
-						</p>
-					</div>
-					<div class=" row my-2  d-flex justify-content-between align-items-center">
-
-
-						<div class="col-12">
-							<a href="./konapur-sadasivpet.html"  class=" text-center project-btn" > View Project</a>
-						</div>
-
-					</div>
-				</div>
-            </div>
-			</div>
-            <div class="col-md-4  project" data-category="btn3">
-                <div class="content">
-				<div class="col">
-					<img src="./img/mango-farm-logo.jpeg" height="200"  alt="" class="card-img">
-					
-				</div>
-				<div class="col d-flex justify-content-end flex-column">
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Location</p>
-						<p class=" ">
-							<strong>
-								Kamkole, China Chelmeda, Sadashivpet
-							</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Total Area</p>
-						<p class=" ">
-							<strong>134 Acres</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Plot Sizes</p>
-						<p class=" ">
-							<strong>3,4,5,6 and 7.5 Guntas</strong>
-						</p>
-					</div>
-
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Site Visit</p>
-						<p class=" ">
-							<a href="+918885667888" class="call-btn">call</a>
-						</p>
-					</div>
-					<div class=" row my-2  d-flex justify-content-between align-items-center">
-						<div class="col-12">
-							<a href="./mango-farm-house-sadashivpet.html" class=" text-center project-btn" > View Project</a>
-						</div>
-
-					</div>
-				</div>
-            </div>
-			</div>
-            <div class="col-md-4   project" data-category="btn2">
-                <div class="content">
-				<div class="col">
-					<img src="./img/navya-stone-logo.png" height="200"  alt="" class="card-img">
-					
-				</div>
-				<div class="col d-flex justify-content-end flex-column">
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Location</p>
-						<p class=" ">
-							<strong>Kamkole, Sadashivpet
-							</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Total Area</p>
-						<p class=" ">
-							<strong>7 Acres</strong>
-						</p>
-					</div>
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Plot Sizes</p>
-						<p class=" ">
-							<strong>183 & 178 & 183 & 199 & 219 & 279 & 393 & 493 Sq. yards</strong>
-						</p>
-					</div>
-					
-					<div class=" d-flex align-items-center justify-content-between pt-3 " style="border-bottom: 2px solid #070707;">
-						<p class=" ">Site Visit</p>
-						<p class=" ">
-							<a href="+918885667888" class="call-btn">CALL</a> 
-						</p>
-					</div>
-					<div class=" row my-2  d-flex justify-content-between align-items-center">
-
-
-						<div class="col-12">
-							<a href="./navya-milestone-sadasivpet.html" class=" text-center project-btn" > View Project</a>
-						</div>
-
-					</div>
-				</div>
-            </div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<style>
-    .project{
-        
-    }
-    .project .content{
-box-shadow: 4px 4px 8px green, -4px -4px 8px green;
-margin-block: 5px;
-transition: 2s all;
-overflow: hidden;
-border-radius: 5px;
-    }
-    .project:hover .content{
-        transform: scale(1.04);
-       border-top-left-radius: 5rem;
-       border-bottom-right-radius: 5rem;
-       border-top-right-radius: 1rem;
-       border-bottom-left-radius: 1rem;
-    }
-    .project .content .col{
-        padding-inline: 5px;
-    }
-    .project img{
-object-fit: contain;
-object-position: center;
-overflow: hidden;
-    }
-
-.project .project-btn{
-    display: block;
-    background-color: green;
-    color: white;
-    width: 100%;
-    font-weight: 600;
-    padding: 10px 0px;
-}
-.project .call-btn{
-    background-color: #ffd041;
-    padding: 3px 15px 5px 15px;
-    color:green;
-}
-</style>
-        <!-- Pricing Start -->
-        <div class="container-xxl py-5 services" style="background-color: #162411;">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
-                    data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3 text-white">We Provide Superior Services</h1>
+        .project .project-btn {
+          display: block;
+          background-color: green;
+          color: white;
+          width: 100%;
+          font-weight: 600;
+          padding: 10px 0px;
+        }
+        .project .call-btn {
+          background-color: #ffd041;
+          padding: 3px 15px 5px 15px;
+          color: green;
+        }
+      </style>
+      <!-- Pricing Start -->
+      <div
+        class="container-xxl py-5 services"
+        style="background-color: #162411"
+      >
+        <div class="container px-lg-5">
+          <div
+            class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3 text-white">We Provide Superior Services</h1>
+          </div>
+          <div class="row gy-5 gx-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div
+                class="position-relative shadow rounded border-top border-5 border-primary"
+              >
+                <div class="text-center border-bottom p-4">
+                  <img src="./img/open-plots.webp" alt="" />
                 </div>
-                <div class="row gy-5 gx-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="position-relative shadow rounded border-top border-5 border-primary">
-                            <div class="text-center border-bottom p-4">
-                                <img src="./img/open-plots.webp" alt="">
-                            </div>
-                            <div class=" p-4 pt-5">
-                                <h4 class="fw-bold text-center text-white">OPEN PLOTS</h4>
-                                <p class="mb-0 text-white">At Raja Roy Promoters, open plots are the canvas of our
-                                    vision. These
-                                    pristine
-                                    parcels
-                                    of land are where we craft innovative and sustainable developments that redefine
-                                    communities. We leverage the potential of open plots to create customized solutions
-                                    that
-                                    enrich lives and leave a lasting legacy. Our commitment to excellence,
-                                    sustainability,
-                                    and community well-being shines through in every open plot project we undertake.
-                                    With
-                                    us, open plots become vibrant, purposeful spaces that inspire and transform.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="position-relative shadow rounded border-top border-5 border-primary">
-
-
-                            <div class="text-center border-bottom p-4">
-                                <img src="./img/form-lands.webp" alt="">
-                            </div>
-                            <div class=" p-4 pt-5">
-                                <h4 class="fw-bold text-center text-white">FARM - LANDS</h4>
-                                <p class="mb-0 text-white"> Our expertise extends to nurturing and enhancing the
-                                    productivity of
-                                    farming lands.
-                                    We
-                                    believe in sustainable agriculture practices, optimizing soil health, and maximizing
-                                    yield potential. Raja Roy Promoters offers opportunities for cultivating thriving,
-                                    eco-friendly agricultural spaces. Join us in a journey where fertile lands become
-                                    the
-                                    foundation for sustainable farming ventures.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="position-relative shadow rounded border-top border-5 border-primary">
-                            <div class="text-center border-bottom p-4">
-                                <img src="./img/investment.webp" alt="">
-                            </div>
-                            <div class="p-4 pt-5">
-                                <h4 class="fw-bold text-center text-white">INVESTMENTS</h4>
-                                <p class="mb-0 text-white"> Our proven track record in real estate ensures that your
-                                    investment is
-                                    in capable
-                                    hands.
-                                    With a focus on strategic opportunities, sustainable growth, and market insights, we
-                                    offer lucrative investment options tailored to your goals. Raja Roy Promoters'
-                                    commitment to transparency, ethical practices, and maximizing returns makes us the
-                                    partner of choice for savvy investors. Join us in building a prosperous future
-                                    through
-                                    sound real estate investments. Your success is our priority.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="p-4 pt-5">
+                  <h4 class="fw-bold text-center text-white">OPEN PLOTS</h4>
+                  <p class="mb-0 text-white">
+                    At Raja Roy Promoters, open plots are the canvas of our
+                    vision. These pristine parcels of land are where we craft
+                    innovative and sustainable developments that redefine
+                    communities. We leverage the potential of open plots to
+                    create customized solutions that enrich lives and leave a
+                    lasting legacy. Our commitment to excellence,
+                    sustainability, and community well-being shines through in
+                    every open plot project we undertake. With us, open plots
+                    become vibrant, purposeful spaces that inspire and
+                    transform.
+                  </p>
                 </div>
+              </div>
             </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div
+                class="position-relative shadow rounded border-top border-5 border-primary"
+              >
+                <div class="text-center border-bottom p-4">
+                  <img src="./img/form-lands.webp" alt="" />
+                </div>
+                <div class="p-4 pt-5">
+                  <h4 class="fw-bold text-center text-white">FARM - LANDS</h4>
+                  <p class="mb-0 text-white">
+                    Our expertise extends to nurturing and enhancing the
+                    productivity of farming lands. We believe in sustainable
+                    agriculture practices, optimizing soil health, and
+                    maximizing yield potential. Raja Roy Promoters offers
+                    opportunities for cultivating thriving, eco-friendly
+                    agricultural spaces. Join us in a journey where fertile
+                    lands become the foundation for sustainable farming
+                    ventures.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div
+                class="position-relative shadow rounded border-top border-5 border-primary"
+              >
+                <div class="text-center border-bottom p-4">
+                  <img src="./img/investment.webp" alt="" />
+                </div>
+                <div class="p-4 pt-5">
+                  <h4 class="fw-bold text-center text-white">INVESTMENTS</h4>
+                  <p class="mb-0 text-white">
+                    Our proven track record in real estate ensures that your
+                    investment is in capable hands. With a focus on strategic
+                    opportunities, sustainable growth, and market insights, we
+                    offer lucrative investment options tailored to your goals.
+                    Raja Roy Promoters' commitment to transparency, ethical
+                    practices, and maximizing returns makes us the partner of
+                    choice for savvy investors. Join us in building a prosperous
+                    future through sound real estate investments. Your success
+                    is our priority.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Pricing End -->
+      </div>
+      <!-- Pricing End -->
 
+      <!-- About Start -->
+      <div class="container-xxl py-5" style="background-color: #ffd041">
+        <div class="container px-lg-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="section-title position-relative mb-4 pb-4">
+                <h5 class="mb-2">Additional Services</h5>
+                <h2 class="mb-2">We Also providing</h2>
+              </div>
 
-        <!-- About Start -->
-        <div class="container-xxl py-5" style="background-color: #ffd041;">
-            <div class="container px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-4">
-                            <h5 class="mb-2 ">Additional Services</h5>
-                            <h2 class="mb-2 ">We Also providing</h2>
-                        </div>
+              <p class="mb-2"></p>
+              <p class="mb-2">
+                Farm-Lands: Farm lands provide vital sustenance, serving as the
+                cornerstone of agricultural production. These fertile expanses
+                not only cultivate crops but also foster biodiversity and
+                ecological balance. They are the bedrock of food security,
+                supporting communities and economies worldwide.
+              </p>
 
-                        <p class="mb-2"><p class="mb-2">Farm-Lands: Farm lands provide vital sustenance, serving as the cornerstone of agricultural production. These fertile expanses not only cultivate crops but also foster biodiversity and ecological balance. They are the bedrock of food security, supporting communities and economies worldwide.</p>
-                        
-                        <p class="mb-2 ">Construction: Our construction services are characterized by
-                            precision, quality,
-                            and sustainability. We bring architectural visions to life with a commitment to excellence
-                            in every detail.It melds architectural vision with engineering precision to shape the built environment we inhabit.</p>
-                        <p class="mb-2 ">Commercial Plots: Our commercial Plots are vibrant hubs of business
-                            and
-                            innovation. They are designed to foster growth, with flexible spaces and strategic locations
-                            that cater to diverse industries.Commercial plots offer prime locations for businesses to establish their presence, serving as strategic hubs for economic activity and growth.</p>
+              <p class="mb-2">
+                Construction: Our construction services are characterized by
+                precision, quality, and sustainability. We bring architectural
+                visions to life with a commitment to excellence in every
+                detail.It melds architectural vision with engineering precision
+                to shape the built environment we inhabit.
+              </p>
+              <p class="mb-2">
+                Commercial Plots: Our commercial Plots are vibrant hubs of
+                business and innovation. They are designed to foster growth,
+                with flexible spaces and strategic locations that cater to
+                diverse industries.Commercial plots offer prime locations for
+                businesses to establish their presence, serving as strategic
+                hubs for economic activity and growth.
+              </p>
 
-                        <div class="row g-3 mt-3">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <button class="read-more"> <a href="./about.html">Know More</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/services-images.jpeg">
-                    </div>
+              <div class="row g-3 mt-3">
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                  <button class="read-more">
+                    <a href="./about.html">Know More</a>
+                  </button>
                 </div>
+              </div>
             </div>
-        </div>
-
-        <!-- About End -->
-        <div class="container-xxl py-5 business">
-            <div class="container px-lg-5">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="clients">
-                            <h3> <span class="counter-value">3</span> +</h3>
-                            <h5>Year In Business</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="clients">
-                            <h3> <span class="counter-value">1000</span> +</h3>
-                            <h5>Happy Clients</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="clients">
-                            <h3> <span class="counter-value">10</span> +</h3>
-                            <h5>Projects Completed</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="clients">
-                            <h3> <span class="counter-value">50</span>+</h3>
-                            <h5>Trained Staff</h5>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-5">
+              <img
+                class="img-fluid wow zoomIn"
+                data-wow-delay="0.5s"
+                src="img/services-images.jpeg"
+              />
             </div>
+          </div>
         </div>
-        <style>
+      </div>
 
-        </style>
-        <script>
-
-
-
-        </script>
-        <!-- Comparison Start -->
-        <div class="container-xxl py-5 why" style="background-color: #162411;">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
-                    data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h5 class="mb-3 text-white">Why Choose Us</h5>
-                    <h3 class="mb-1 text-white">Six Reasons For People Choosing Us</h3>
-                </div>
-                <div class="row g-5  position-relative">
-                    <div class="col-lg-12 pe-lg-5">
-
-                        <div class="row gy-3 gx-5 text-center why-us">
-                            <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.1s">
-                                <i class="fa fa-award  fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold text-white">Quality Material</h5>
-                                <p class="text-white">Quality is not just our commitment; it's our signature, reflecting
-                                    in every project
-                                    we undertake.</p>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.3s">
-                                <i class="fa fa-check-circle fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold text-white">Accredited</h5>
-                                <p class="text-white">We are proud to be accredited, a testament to our unwavering
-                                    commitment to industry
-                                    excellence.</p>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.5s">
-                                <i class="fa fa-user fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold text-white">Trained Team</h5>
-                                <p class="text-white">Our company boasts a highly trained team, skilled to tackle every
-                                    challenge with
-                                    expertise and precision.</p>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.7s">
-                                <i class="fa fa-clock fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold text-white">Time Availability</h5>
-                                <p class="text-white">We prioritize time availability, ensuring our services align
-                                    seamlessly with your
-                                    schedule and needs.</p>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.7s">
-                                <i class="fa fa-phone-volume fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold text-white">Quick Response</h5>
-                                <p class="text-white">Our company prides itself on 24/7 time availability, ensuring we
-                                    are always there
-                                    when you need us.</p>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.7s">
-                                <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold text-white">3 years Assurance</h5>
-                                <p class="text-white">We provide a solid 3-year assurance, guaranteeing the longevity
-                                    and reliability of
-                                    our projects.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <!-- About End -->
+      <div class="container-xxl py-5 business">
+        <div class="container px-lg-5">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="clients">
+                <h3><span class="counter-value">3</span>+</h3>
+                <h5>Year In Business</h5>
+              </div>
             </div>
-        </div>
-        <!-- Comparison Start -->
-        <style>
-         
-        </style>
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
-                    data-wow-delay="0.1s" style="max-width: 600px;">
-
-                    <h3 class="mb-1">Customers Feedbacks</h3>
-                </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div
-                        class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle"
-                            style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <p class="mt-3">This Company has good collection of projects and staff was very friendly and
-                            given very detailed explanation of Plots.Raja Roy Promotors exceeded our expectations in
-                            finding our dream home.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/team-1.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Nexon</h6>
-                                <small>customer</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle"
-                            style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <p class="mt-3">Padma sri helped me to choose good Plot. Really a budget friendly Company.
-                            Prices are affordable to buy the Plots & other services, for all Excellent service.
-
-                        </p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/client2.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">KAMALA</h6>
-                                <small>customer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle"
-                            style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <p class="mt-3">I have been an investor with Raja Roy Promotors , and I am extremely pleased
-                            with my experience. From the very beginning, the company has demonstrated a commitment to
-                            excellence.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/client01.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Tejeshwara Rao</h6>
-                                <small> Invester</small>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-lg-3">
+              <div class="clients">
+                <h3><span class="counter-value">1000</span>+</h3>
+                <h5>Happy Clients</h5>
+              </div>
             </div>
-        </div>
-
-        <!-- Testimonial End -->
-
-
-        <div class="container-xxl pt-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
-                    data-wow-delay="0.1s" style="max-width: 600px;">
-
-                    <h3 class="mb-1">Our Location</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15220.950548588293!2d78.363599!3d17.496166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92142fffffff%3A0xabf8f98d7db14bd2!2sRAJA%20ROY%20PRAMOTORS!5e0!3m2!1sen!2sus!4v1710506257969!5m2!1sen!2sus"
-                            style="border:0;" width="100%" height="500px" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+            <div class="col-lg-3">
+              <div class="clients">
+                <h3><span class="counter-value">10</span> +</h3>
+                <h5>Projects Completed</h5>
+              </div>
             </div>
-        </div>
-
-
-
-        <style>
-
-        </style>
-        <!-- Footer Start -->
-        <div class="container-fluid  text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-
-            <div class="container pt-1 pb-4 px-lg-5">
-                <div class="row gy-5 gx-4 pt-5">
-                    <div class="col-lg-2 col-md-12">
-                        <div class="p-2 footer-logo">
-                            <img src="./img/logo.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12">
-                        <div class="row gy-5 g-4">
-                            <div class="col-md-6">
-                                <h5 class="fw-bold text-white mb-4">Our links</h5>
-                                <a class="btn btn-link" href="/">Home </a>
-                                <a class="btn btn-link" href="./about.html">About </a>
-
-                                <a class="btn btn-link" href="./gallery.html">Gallery</a>
-                                <a class="btn btn-link" href="./contact.html">Contact</a>
-
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="fw-bold text-white mb-4">Our Services</h5>
-                                <a class="btn btn-link" href="./open-plots.html">Open Plots</a>
-                                <a class="btn btn-link" href="./farm-lands.html">Farm-Lands</a>
-                                <a class="btn btn-link" href="./investments.html">Investment</a>
-                                <a class="btn btn-link" href="">Projects</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-5">
-                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>402, MATHRUSREE HOMES APARTMENTS,
-                            MATHRUSREE NAGAR MIYAPUR, HYDERABAD, 500049</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+918885667888</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>rajaroypramotors21@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/RR_Pramotors"
-                                target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social"
-                                href="https://www.facebook.com/RajaRoyPramotors21" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"
-                                    target="_blank"></i></a>
-
-                            <a class="btn btn-outline-light btn-social"
-                                href="https://www.instagram.com/raja_roy_pramotors/" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-lg-3">
+              <div class="clients">
+                <h3><span class="counter-value">50</span>+</h3>
+                <h5>Trained Staff</h5>
+              </div>
             </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">RAJA ROY PRAMOTORS</a>, All Right Reserved.
-
-
-                            Designed By <a class="border-bottom" href="https://www.thepatternscompany.com/">The Patterns
-                                Company</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="/">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <style></style>
+      <script></script>
+      <!-- Comparison Start -->
+      <div class="container-xxl py-5 why" style="background-color: #162411">
+        <div class="container px-lg-5">
+          <div
+            class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h5 class="mb-3 text-white">Why Choose Us</h5>
+            <h3 class="mb-1 text-white">Six Reasons For People Choosing Us</h3>
+          </div>
+          <div class="row g-5 position-relative">
+            <div class="col-lg-12 pe-lg-5">
+              <div class="row gy-3 gx-5 text-center why-us">
+                <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.1s">
+                  <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold text-white">Quality Material</h5>
+                  <p class="text-white">
+                    Quality is not just our commitment; it's our signature,
+                    reflecting in every project we undertake.
+                  </p>
                 </div>
-
+                <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.3s">
+                  <i class="fa fa-check-circle fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold text-white">Accredited</h5>
+                  <p class="text-white">
+                    We are proud to be accredited, a testament to our unwavering
+                    commitment to industry excellence.
+                  </p>
+                </div>
+                <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.5s">
+                  <i class="fa fa-user fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold text-white">Trained Team</h5>
+                  <p class="text-white">
+                    Our company boasts a highly trained team, skilled to tackle
+                    every challenge with expertise and precision.
+                  </p>
+                </div>
+                <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.7s">
+                  <i class="fa fa-clock fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold text-white">Time Availability</h5>
+                  <p class="text-white">
+                    We prioritize time availability, ensuring our services align
+                    seamlessly with your schedule and needs.
+                  </p>
+                </div>
+                <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.7s">
+                  <i class="fa fa-phone-volume fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold text-white">Quick Response</h5>
+                  <p class="text-white">
+                    Our company prides itself on 24/7 time availability,
+                    ensuring we are always there when you need us.
+                  </p>
+                </div>
+                <div class="col-sm-4 wow fadeIn p-4" data-wow-delay="0.7s">
+                  <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold text-white">3 years Assurance</h5>
+                  <p class="text-white">
+                    We provide a solid 3-year assurance, guaranteeing the
+                    longevity and reliability of our projects.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Footer End -->
+      </div>
+      <!-- Comparison Start -->
+      <style>
+    
+      </style>
 
-        <div class="whatsapp">
-            <a href="https://wa.me/+918885667888" target="_blank">
-                <h4 class="vertical">Chat With Us!</h4>
-
-                <div class="notify">
-                    <div class="notify-img">
-                        <img src="./img/168-br.svg" alt="raja roy Promoters">
-                    </div>
+      <!-- Testimonial Start -->
+      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container px-lg-5">
+          <div
+            class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h3 class="mb-1">Customers Feedbacks</h3>
+          </div>
+          <div class="owl-carousel testimonial-carousel">
+            <div
+              class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4"
+            >
+              <div class="d-flex align-items-center flex-column">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/team-1.jpg"
+                  style="width: 50px; height: 50px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Nexon</h6>
+                  <small>customer</small>
                 </div>
-            </a>
-        </div>
-        <style>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle"
+                style="width: 45px; height: 45px; margin-top: -3px"
+              >
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+              <p class="mt-3">
+                This Company has good collection of projects and staff was very
+                friendly and given very detailed explanation of Plots.Raja Roy
+                Promotors exceeded our expectations in finding our dream home.
+              </p>
+            </div>
 
-        </style>
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+            <div
+              class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4"
+            >
+              <div class="d-flex align-items-center flex-column">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/client2.jpg"
+                  style="width: 50px; height: 50px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">KAMALA</h6>
+                  <small>customer</small>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle"
+                style="width: 45px; height: 45px; margin-top: -3px"
+              >
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+              <p class="mt-3">
+                Padma sri helped me to choose good Plot. Really a budget
+                friendly Company. Prices are affordable to buy the Plots & other
+                services, for all Excellent service.
+              </p>
+            </div>
+            <div
+              class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4"
+            >
+              <div class="d-flex align-items-center flex-column justify-content-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/client01.jpg"
+                  style="width: 50px; height: 50px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Tejeshwara Rao</h6>
+                  <small> Invester</small>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle"
+                style="width: 45px; height: 45px; margin-top: -3px"
+              >
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+              <p class="mt-3">
+                I have been an investor with Raja Roy Promotors , and I am
+                extremely pleased with my experience. From the very beginning,
+                the company has demonstrated a commitment to excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial End -->
+
+      <div class="container-xxl pt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+          <div
+            class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h3 class="mb-1">Our Location</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15220.950548588293!2d78.363599!3d17.496166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92142fffffff%3A0xabf8f98d7db14bd2!2sRAJA%20ROY%20PRAMOTORS!5e0!3m2!1sen!2sus!4v1710506257969!5m2!1sen!2sus"
+                style="border: 0"
+                width="100%"
+                height="500px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style></style>
+      <!-- Footer Start -->
+      <div
+        class="container-fluid text-white footer mt-5 pt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container pt-1 pb-4 px-lg-5">
+          <div class="row gy-5 gx-4 pt-5">
+            <div class="col-lg-2 col-md-12">
+              <div class="p-2 footer-logo">
+                <img src="./img/logo.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="row gy-5 g-4">
+                <div class="col-md-6">
+                  <h5 class="fw-bold text-white mb-4">Our links</h5>
+                  <a class="btn btn-link" href="/">Home </a>
+                  <a class="btn btn-link" href="./about.html">About </a>
+
+                  <a class="btn btn-link" href="./gallery.html">Gallery</a>
+                  <a class="btn btn-link" href="./contact.html">Contact</a>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="fw-bold text-white mb-4">Our Services</h5>
+                  <a class="btn btn-link" href="./open-plots.html"
+                    >Open Plots</a
+                  >
+                  <a class="btn btn-link" href="./farm-lands.html"
+                    >Farm-Lands</a
+                  >
+                  <a class="btn btn-link" href="./investments.html"
+                    >Investment</a
+                  >
+                  <a class="btn btn-link" href="">Projects</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-5">
+              <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>402, MATHRUSREE HOMES
+                APARTMENTS, MATHRUSREE NAGAR MIYAPUR, HYDERABAD, 500049
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+918885667888
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>rajaroypramotors21@gmail.com
+              </p>
+              <div class="d-flex pt-2">
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://twitter.com/RR_Pramotors"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://www.facebook.com/RajaRoyPramotors21"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-youtube" target="_blank"></i
+                ></a>
+
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://www.instagram.com/raja_roy_pramotors/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container px-lg-5">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">RAJA ROY PRAMOTORS</a>,
+                All Right Reserved. Designed By
+                <a
+                  class="border-bottom"
+                  href="https://www.thepatternscompany.com/"
+                  >The Patterns Company</a
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="/">Home</a>
+                  <a href="">Cookies</a>
+                  <a href="">Help</a>
+                  <a href="">FQAs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <div class="whatsapp">
+        <a href="https://wa.me/+918885667888" target="_blank">
+          <h4 class="vertical">Chat With Us!</h4>
+
+          <div class="notify">
+            <div class="notify-img">
+                <h2>Free Visit</h2>
+              <img src="./img/transt-car1.gif" alt="raja roy Promoters" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <style></style>
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -937,7 +1213,5 @@ overflow: hidden;
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-   
-</body>
-
+  </body>
 </html>
