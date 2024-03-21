@@ -860,3 +860,38 @@ body
   background-color: var(--primary);
   font-weight: 600;
 }
+
+
+.book-free-visit{
+       
+}
+.book-free-visit .nav-link.dropdown-toggle{
+    clip-path: none;
+    background-color: green;
+    border-radius: 20px;
+}
+#navbarCollapse > div > div.nav-item.dropdown.book-free-visit > a{
+    clip-path: none;
+    background-color: green;
+    border-radius: 20px;
+}
+
+
+.book-free-visit .free-visit{
+   width: 300px;
+   left: -100px;
+}
+.book-free-visit .free-visit button{
+background-color: green;
+}
+.book-free-visit .free-visit .form-floating > .form-control,
+.book-free-visit .free-visit .form-floating > .form-select {
+height: calc(3rem + 2px);
+padding: 1rem 0.75rem;
+}
+.book-free-visit .free-visit.form-floating > .form-control:focus ~ label,
+.book-free-visit .free-visit .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.book-free-visit .free-visit .form-floating > .form-select ~ label {
+opacity: 0.65;
+transform: scale(0.6) translateY(-0.5rem) translateX(0.05rem);
+}
