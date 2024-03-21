@@ -1,6 +1,10 @@
 (function ($) {
   "use strict";
 
+
+
+
+  
   // Spinner
   var spinner = function () {
     setTimeout(function () {
@@ -22,6 +26,10 @@
       $(".navbar").removeClass("sticky-top shadow-sm");
     }
   });
+
+
+
+
 
   // Dropdown on mouse hover
   const $dropdown = $(".dropdown");
@@ -115,4 +123,32 @@
       },
     },
   });
+//   var portfolioIsotope = $('.portfolio-container').isotope({
+//     itemSelector: '.portfolio-item',
+//     layoutMode: 'fitRows'
+// });
+// $('#portfolio-flters li').on('click', function () {
+//     $("#portfolio-flters li").removeClass('active');
+//     $(this).addClass('active');
+
+//     portfolioIsotope.isotope({filter: $(this).data('filter')});
+// });
+
 })(jQuery);
+function filterProducts(category,button) {
+  var buttons = document.querySelectorAll('#portfolio-flters li');
+    buttons.forEach(function(btn) {
+      btn.classList.remove('active');
+    });
+    button.classList.add('active');
+
+
+  var products = document.querySelectorAll('.project');
+  products.forEach(function(product) {
+    if (category === 'btn1' || product.getAttribute('data-category') === category) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+  }

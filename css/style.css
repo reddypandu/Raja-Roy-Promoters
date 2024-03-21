@@ -4,6 +4,7 @@
   --light: #f2f2f2;
   --dark: #1d2833;
   --light-red: #cb4154;
+  --green: green;
 }
 
 /*** Spinner ***/
@@ -24,14 +25,18 @@
 }
 .call {
   position: fixed;
-  right: 20px;
-  top: 20%;
+  left: 20px;
+  top: 30%;
   background-color: #cb4154;
   z-index: 999;
   padding: 0.6rem;
   border-radius: 50%;
 }
-
+@media(max-width:992px){
+  .call{
+    display: none;
+  }
+}
 .whatsapp {
   position: fixed;
   right: 100px;
@@ -152,31 +157,36 @@ h6,
 
 /*** Navbar ***/
 .navbar-light {
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: ; */
 }
 .navbar-light .navbar-nav .nav-link {
   position: relative;
-  margin-left: 25px;
-  padding: 35px 0;
+  /* margin-left: 25px; */
+  padding: 12px 20px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff !important;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
   transition: 0.5s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-  padding: 20px 0;
-  color: var(--dark) !important;
+  padding: 12px 20px;
+
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: var(--primary) !important;
+  color: var(--light);
+  background-color: var(--green);
 }
-
+.sticky-top.navbar-light .navbar-nav .nav-link:hover,
+.sticky-top.navbar-light .navbar-nav .nav-link.active {
+  color: var(--light);
+  background-color: var(--green);
+}
 .navbar-light .navbar-brand h1 {
   color: #ffffff;
 }
@@ -206,6 +216,7 @@ h6,
     padding: 10px 0;
     margin-left: 0;
     color: var(--dark) !important;
+
   }
 
   .navbar-light .navbar-brand h1 {
@@ -225,7 +236,19 @@ h6,
     left: 0;
     z-index: 999;
   }
-
+  .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    background-color: #ffd041;
+    -webkit-clip-path: polygon(
+      50% 0,
+      90% 30%,
+      90% 70%,
+      50% 100%,
+      10% 70%,
+      10% 30%
+    );
+    clip-path: polygon(50% 0, 90% 30%, 90% 70%, 50% 100%, 10% 70%, 10% 30%);
+  }
   .sticky-top.navbar-light {
     position: fixed;
     background: #ffffff;
@@ -236,17 +259,24 @@ h6,
   }
 }
 .hero-header {
-  background: url(/img/hero-image.jpeg);
+  background: url(../img/hero-slider2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-header-open{
+  background: url(../img/open-plots\ \(2\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 /*** Hero Header ***/
 .hero-header1 {
-  background: url(/img/mango\ farm\ mango\ 123.jpeg);
+  background: url(../img/farm\ \(3\).jpeg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-  max-width: 100% !important;
+  min-height: 100vh !important;
+  max-width: 100%;
+  
   /* background: url(../img/bg-round.png), url(../img/bg-round-2.png),
     url(../img/bg-square.png), url(../img/bg-line.png),
     url(../img/bg-bottom-hero.png);
@@ -255,12 +285,40 @@ h6,
   background-repeat: no-repeat; */
 }
 
+#portfolio-flters{
+  display: inline-flex;
+}
+#portfolio-flters li{
+  cursor: pointer;
+}
+#portfolio-flters li.active{
+border-bottom: 1px solid green;
+}
+.our-team {
+  
+  border-radius: 10px;
+}
+
+
 .hero-header2 {
-  background: url(/img/hero-image.jpeg);
+  background: url(../img/open-plots\ \(3\).jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 
-  max-width: 100% !important;
+  max-width: 100% ;
+  min-height: 100vh !important;
+}
+.hero-header3 {
+  background: url(../img/investment.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100% ;
+  min-height: 100vh !important;
+}
+.hero-header1,.hero-header2,.hero-header3{
+  display: grid;
+  place-items: center;
 }
 @media (max-width: 992px) {
   .hero-header1 {
@@ -270,12 +328,12 @@ h6,
     height: 100% !important;
   }
 }
+
 .breadcrumb-item + .breadcrumb-item::before {
   color: rgba(255, 255, 255, 0.5);
 }
 
 body > div > div.container-xxl.position-relative.p-0 > div > div > div.owl-nav {
-  z-index: 999;
 }
 body
   > div
@@ -285,8 +343,8 @@ body
   > div.owl-nav
   > div.owl-prev {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #f2f2f28a;
   border: 1px solid var(--primary);
   top: 50%;
@@ -296,6 +354,7 @@ body
   justify-content: center;
   color: white;
   font-size: 25px;
+  z-index: 9999;
 }
 body
   > div
@@ -305,8 +364,8 @@ body
   > div.owl-nav
   > div.owl-next {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #f2f2f28a;
   top: 50%;
   right: 5px;
@@ -315,6 +374,8 @@ body
   justify-content: center;
   color: white;
   font-size: 25px;
+  z-index: 9999;
+
   border: 1px solid var(--primary);
 }
 /*** Section Title ***/
@@ -441,7 +502,7 @@ body
   background-position: 0px 112px, right 0 bottom 0, left 50% top 80px,
     left 50% bottom 0, top center;
   background-repeat: no-repeat; */
-  background-color: #131d3b;
+  background-color: var(--green);
 }
 
 .footer p {
@@ -512,13 +573,8 @@ body
 }
 
 /*hero section css*/
-.owl-carousel.hero-carousel .owl-stage {
-  height: 100vh;
-}
 
-.owl-carousel.hero-carousel .owl-stage-outer {
-  height: 100vh;
-}
+
 
 .hero-header2 .row {
   padding: 4rem;
@@ -531,6 +587,9 @@ body
 .hero-header1 .row .content,
 .hero-header2 .row .content {
   padding-block: 9rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
 }
 
 .hero-header2 .hero-img {
@@ -572,17 +631,20 @@ body
 /*mangos*/
 .mangos {
   position: relative;
+  width: 80%;
+  margin: auto;
 }
 
 .mangos .mangooos {
   position: absolute;
   top: 30%;
-  z-index: 9999;
+  z-index: 99;
+  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 80%;
-  margin: auto;
+  height: 100vh;
 }
 
 .mangos .mangooos .mango {
@@ -733,8 +795,8 @@ body
   border-bottom-left-radius: 5px;
   padding: 12px 24px;
   color: white;
-  background-color: #ffd041;
-  border-color: #ffd041;
+  background-color: var(--green);
+  border-color: var(--green);
 }
 
 .read-more a {
