@@ -325,7 +325,7 @@ h6,
 }
 /*** Hero Header ***/
 .hero-header1 {
-  background: url(../img/farm\ \(3\).jpeg);
+  background: url(../img/home\ back.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -356,21 +356,21 @@ border-bottom: 1px solid green;
 
 
 .hero-header2 {
-  background: url(../img/open-plots\ \(3\).jpeg);
+  background: url(../img/farm\ \(3\).jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 
   max-width: 100% ;
   min-height: 100vh !important;
 }
-.hero-header3 {
+/* .hero-header3 {
   background: url(../img/investment.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100% ;
   min-height: 100vh !important;
-}
+} */
 .hero-header1,.hero-header2,.hero-header3{
   display: grid;
   place-items: center;
