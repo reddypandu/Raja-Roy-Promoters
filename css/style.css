@@ -453,6 +453,7 @@ body
 .gallery .col-lg-4 img{
  object-fit: cover;
   height: 100%;
+  border: 10px solid var(--green);
 }
 
 .section-title::after {
