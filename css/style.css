@@ -166,18 +166,19 @@ h6,
 .navbar-light .navbar-nav .nav-link {
   position: relative;
   /* margin-left: 25px; */
-  padding: 12px 20px;
+  padding: 10px 10px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff !important;
   text-transform: uppercase;
   font-weight: 600;
   outline: none;
-  transition: 0.5s;
+  transition: 0.5s;margin-right: 5px;
+  border-radius: 20px;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-  padding: 12px 20px;
+  padding: 10px 10px;
 
 }
 
@@ -243,15 +244,8 @@ h6,
   .navbar-light .navbar-nav .nav-link,
   .sticky-top.navbar-light .navbar-nav .nav-link {
     background-color: #ffd041;
-    -webkit-clip-path: polygon(
-      50% 0,
-      90% 30%,
-      90% 70%,
-      50% 100%,
-      10% 70%,
-      10% 30%
-    );
-    clip-path: polygon(50% 0, 90% 30%, 90% 70%, 50% 100%, 10% 70%, 10% 30%);
+  
+    
   }
   .sticky-top.navbar-light {
     position: fixed;
@@ -937,12 +931,13 @@ body
 }
 .book-free-visit .nav-link.dropdown-toggle{
     clip-path: none;
-    background-color: green;
+    background-color: rgb(203, 65, 84);
     border-radius: 20px;
+
 }
 #navbarCollapse > div > div.nav-item.dropdown.book-free-visit > a{
     clip-path: none;
-    background-color: green;
+    background-color: rgb(203, 65, 84);
     border-radius: 20px;
 }
 
@@ -979,4 +974,42 @@ transform: scale(0.6) translateY(-0.5rem) translateX(0.05rem);
 }
 .project-highlights .img img{
   height: 100%;
+}
+.project {
+}
+.project .content {
+  box-shadow: 4px 4px 8px green, -4px -4px 8px green;
+  margin-block: 5px;
+  transition: 2s all;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.project:hover .content {
+  transform: scale(1.04);
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.project .content .col {
+  padding-inline: 5px;
+}
+.project img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+}
+
+.project .project-btn {
+  display: block;
+  background-color: green;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.project .call-btn {
+  background-color: #ffd041;
+  padding: 3px 15px 5px 15px;
+  color: green;
 }
