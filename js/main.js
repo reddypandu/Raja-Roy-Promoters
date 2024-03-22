@@ -124,18 +124,41 @@
     },
   });
   $(document).ready(function(){
-    $('.counter-value').each(function(){
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        },{
-            duration: 2000,
-            easing: 'easeInQuad',
-            step: function (now){
-                $(this).text(Math.ceil(now));
+    $(window).scroll(function(){
+        $('.counter-value').each(function(){
+            var isVisible = $(this).visible(true); // Check if the element is visible in the viewport
+            if(isVisible){
+                if(!$(this).hasClass('counted')){ // Check if the element has already been counted
+                    $(this).addClass('counted');
+                    $(this).prop('Counter',0).animate({
+                        Counter: $(this).text()
+                    },{
+                        duration: 2000,
+                        easing: 'easeInQuad',
+                        step: function (now){
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                }
             }
         });
     });
+
+    // Helper function to check if element is visible in viewport
+    $.fn.visible = function(partial){
+        var $t            = $(this),
+            $w            = $(window),
+            viewTop       = $w.scrollTop(),
+            viewBottom    = viewTop + $w.height(),
+            _top          = $t.offset().top,
+            _bottom       = _top + $t.height(),
+            compareTop    = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+    };
 });
+
 
 })(jQuery);
 function filterProducts(category,button) {
