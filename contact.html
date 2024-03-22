@@ -64,10 +64,10 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
                             <div class="dropdown-menu m-0">
-                                <a href="./royal-stone-sadashivpet.html" class="dropdown-item ">Royal Stone</a>
-                                <a href="./navya-milestone-sadasivpet.html" class="dropdown-item">Navya Milestone</a>
-                                <a href="./konapur-sadasivpet.html" class="dropdown-item">Konapur</a>
-                                <a href="./mango-farm-house-sadashivpet.html" class="dropdown-item">Mango Farm House</a>
+                                <a href="./royal-stone-sadashivpet.html" class="dropdown-item ">Royal Stone Project</a>
+                                <a href="./navya-milestone-sadasivpet.html" class="dropdown-item">Navya Milestone Project</a>
+                                <a href="./konapur-sadasivpet.html" class="dropdown-item">Konapur Project</a>
+                                <a href="./mango-farm-house-sadashivpet.html" class="dropdown-item">Mango Farm House Project</a>
                             </div>
                         </div>
                        
@@ -98,20 +98,20 @@
                                                             <div class="col-md-12">
                                                                 <div class="form-floating">
                                                                     <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                                                    <label for="name">Your Name</label>
+                                                                    <label for="name">Enter Your Name*</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <div class="form-floating">
                                                                     <input type="email" class="form-control" id="email"
                                                                         placeholder="Your Email" required>
-                                                                    <label for="email">Your Email</label>
+                                                                    <label for="email">Enter Your Email*</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">
                                                                 <div class="form-floating">
                                                                     <input type="text" class="form-control" id="number" placeholder="Enter Your Number" required>
-                                                                    <label for="number">Enter Your Number</label>
+                                                                    <label for="number">Enter Your Number*</label>
                                                                 </div>
                                                             </div>
                                                             
@@ -190,31 +190,31 @@
                     <div class="col-lg-7 col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             <!-- https://formcarry.com/s/UUlXYOX175l -->
-                            <form action="">
+                            <form id="bookingForm" method="post">
                                 <div class="row g-3">
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Enter Your Name *</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Enter Your Name*</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="email"
-                                                placeholder="Your Email">
-                                            <label for="email">Enter Your Email</label>
+                                                placeholder="Your Email" required>
+                                            <label for="email">Enter Your Email*</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-floating">
                                             <input type="number" class="form-control" id="number"
-                                                placeholder="Enter Your Number">
-                                            <label for="number">Enter Your Number *</label>
+                                                placeholder="Enter Your Number" required>
+                                            <label for="number">Enter Your Number*</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
@@ -334,21 +334,14 @@
             <div class="container px-lg-5">
                 <div class="copyright">
                     <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="col-md-12 text-center  mb-3 mb-md-0">Copyright
                             &copy; <a class="border-bottom" href="#">RAJA ROY PRAMOTORS</a>, All Right Reserved.
-
-
+    
+    
                             Designed By <a class="border-bottom" href="https://www.thepatternscompany.com/">The Patterns
                                 Company</a>
                         </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="/">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -385,6 +378,76 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- <script>
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+          event.preventDefault();
+      
+          // Get form data
+          var fullName = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+        
+          var number = document.getElementById("number").value;
+          var message = document.getElementById("message").value;
+          var subject = document.getElementById("subject").value;
+      
+          // Basic validation (check if required fields are filled)
+        //   if (!fullName || !email || !subject || !number) {
+        //     alert("Please fill in all required fields.");
+        //     return;
+        //   }
+      
+          // Prepare encoded message (consider server-side for security)
+          var encodedMessage = encodeURIComponent(
+            "Name: " + fullName + "\n" +
+            "Email: " + email + "\n" +
+            "Number: " + number + "\n" +
+            
+            "Subject: " + subject + "\n" +
+            "Message: " + message
+          );
+      
+          // Mobile device, open WhatsApp
+          var whatsappLink = `mailto:rajaroypramotors21@gmail.com?text=${encodedMessage}`;
+          window.open(whatsappLink, "_blank");
+      
+          // Additional: Reset form and show thank you message
+          document.getElementById("thankYouMessage").style.display = "block";
+          document.getElementById("bookingForm").reset();
+        });
+      </script> -->
+      <script>
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Collect data from the form
+  var fullName = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  // ... other data
+
+  // Prepare data for sending to server (consider JSON format)
+  var formData = {
+    "name": fullName,
+    "email": email,
+    // ... other data fields
+  };
+
+  // Send data to server using AJAX (example using fetch API)
+  fetch('/form-process.php', {  // Replace with your server-side script path
+    method: 'POST',
+    body: JSON.stringify(formData),  // Send data as JSON
+  })
+  .then(response => response.json())  // Handle server response (if applicable)
+  .then(data => {
+    // Handle success (e.g., show a thank you message)
+    console.log("Success:", data);
+  })
+  .catch(error => {
+    // Handle errors (e.g., show an error message)
+    console.error("Error:", error);
+  });
+});
+
+      </script>
 </body>
 
 </html>

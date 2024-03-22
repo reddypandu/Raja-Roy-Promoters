@@ -45,6 +45,7 @@
   z-index: 99;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  box-shadow: 3px 3px 6px var(--primary),-3px -3px 6px var(--primary);
 }
 
 .whatsapp .vertical {
@@ -61,6 +62,7 @@
 .whatsapp .notify .notify-img h2{
   font-size: 30px;
  color: var(--green);
+ text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
 
 .whatsapp .notify .notify-img img {
@@ -540,7 +542,31 @@ body
   width: 30px;
   background: var(--primary);
 }
+/* .projects-carousel .owl-dots {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.projects-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background: #dddddd;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.projects-carousel .owl-dot.active {
+  width: 30px;
+  background: var(--primary);
+} */
+.projects-carousel{
 
+}
+.projects-carousel .project-item{
+ border: 2px solid var(--green) !important;
+}
 /*** Team ***/
 .team-item,
 .team-item .bg-primary,
