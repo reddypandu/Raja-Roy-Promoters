@@ -169,7 +169,7 @@ h6,
   padding: 10px 10px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  color: #ffffff !important;
+  color: #ffffff ;
   text-transform: uppercase;
   font-weight: 600;
   outline: none;
@@ -218,12 +218,16 @@ h6,
 
   .navbar-light .navbar-nav .nav-link,
   .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 10px 0;
+    padding: 10px 10px;
     margin-left: 0;
-    color: var(--dark) !important;
+    color: var(--dark);
 
   }
-
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: var(--light);
+    background-color: var(--green);
+  }
   .navbar-light .navbar-brand h1 {
     color: var(--primary);
   }
@@ -442,6 +446,10 @@ body
   border-top: 1px solid #5a5a5a;
   border-bottom: 1px solid #5a5a5a;
 }
+.gallery{
+  background-color: var(--primary);
+  padding-bottom: 2rem;
+}
 .gallery .col-lg-4{
   
   height: 300px;
@@ -449,7 +457,7 @@ body
 .gallery .col-lg-4 img{
  object-fit: cover;
   height: 100%;
-  border: 10px solid var(--green);
+  
 }
 
 .section-title::after {
@@ -896,6 +904,7 @@ body
 .container-fluid.details{
   padding-top: 2rem;
   max-width: 1200px;
+  padding-bottom: 2rem;
 }
 .order_list li {
   padding-left: 30px;
