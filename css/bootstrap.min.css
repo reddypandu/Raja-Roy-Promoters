@@ -6333,6 +6333,7 @@ border-bottom: 1px solid var(--bs-white);
 .mx-2 {
   margin-right: 0.5rem !important;
   margin-left: 0.5rem !important;
+  margin-top: 1.5rem !important;
 }
 .mx-3 {
   margin-right: 1rem !important;
