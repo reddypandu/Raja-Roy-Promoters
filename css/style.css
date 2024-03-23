@@ -1038,3 +1038,14 @@ transform: scale(0.6) translateY(-0.5rem) translateX(0.05rem);
   padding: 3px 15px 5px 15px;
   color: green;
 }
+  .col-lg-4-photo{
+    position: relative;
+    width: 300px; 
+    height: 200px; 
+  }
+  
+  .col-lg-4-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
