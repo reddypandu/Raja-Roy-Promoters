@@ -474,6 +474,20 @@ body
   height: 100%;
   
 }
+.about{
+ 
+  padding-bottom: 5rem;
+  padding-right: 5rem;
+}
+.about .col-lg-4{
+  
+  height: 300px;
+}
+.about .col-lg-4 img{
+ object-fit: cover;
+  height: 100%;
+  
+}
 
 .section-title::after {
   position: absolute;
