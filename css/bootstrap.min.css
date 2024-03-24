@@ -1271,6 +1271,15 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+/* @media (max-width: 768px) {
+  .col-lg-6-vision{
+  img {
+      max-width: 100%;
+      height:auto;
+  }
+}
+} */
+
 @media (min-width: 1200px) {
   .col-xl {
     flex: 1 0 0%;
