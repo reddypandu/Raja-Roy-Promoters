@@ -481,7 +481,8 @@ body
 }
 .about .col-lg-4{
   
-  height: 300px;
+  height: 420px;
+  width:700px;
 }
 .about .col-lg-4 img{
  object-fit: cover;
