@@ -481,7 +481,19 @@ body
   height: 100%;
   
 }
-
+/* .about-images{
+ 
+  padding-bottom: 2rem;
+}
+.about-images .col-lg-6{
+  
+  height: 500px;
+}
+.about-images .col-lg-6 img{
+ object-fit: cover;
+  height: 100%;
+  
+} */
 .about{
  
   padding-bottom: 5rem;
