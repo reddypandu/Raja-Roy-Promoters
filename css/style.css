@@ -352,7 +352,14 @@ h6,
     center bottom -1px;
   background-repeat: no-repeat; */
 }
-
+.hero-header3 {
+  background: url(../img/construction1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh !important;
+  max-width: 100%;
+}
 #portfolio-flters{
   display: inline-flex;
 }
