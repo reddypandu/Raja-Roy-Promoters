@@ -497,19 +497,22 @@ body
 .about{
  
   padding-bottom: 5rem;
-  padding-right: 5rem;
 }
 .about .col-lg-4{
   
-  height: 420px;
-  width:700px;
+  /* height: 420px;
+  width:700px; */
 }
 .about .col-lg-4 img{
- object-fit: cover;
-  height: 100%;
+object-fit: scale-down;
   
 }
-
+ .about-img{
+height: auto;
+}
+.about-img img{
+ 
+}
 .section-title::after {
   position: absolute;
   content: "";
