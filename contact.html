@@ -99,24 +99,24 @@
                                         <div class="row g-5">
                                             <div class="col-lg-12 col-md-6">
                                                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                                                    <form action="">
+                                                    <form id="booking">
                                                         <div class="row g-3">
                                                             <div class="col-md-12">
                                                                 <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                                                    <input type="text" class="form-control" id="Name"  placeholder="Your Name" required>
                                                                     <label for="name">Enter Your Name*</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <div class="form-floating">
-                                                                    <input type="email" class="form-control" id="email"
+                                                                    <input type="email" class="form-control email" id="Email" 
                                                                         placeholder="Your Email" required>
                                                                     <label for="email">Enter Your Email*</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">
                                                                 <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="number" placeholder="Enter Your Number" required>
+                                                                    <input type="text" class="form-control number" id="Number" placeholder="Enter Your Number" required>
                                                                     <label for="number">Enter Your Number*</label>
                                                                 </div>
                                                             </div>
@@ -195,8 +195,8 @@
                 <div class="row g-5">
                     <div class="col-lg-7 col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- https://formcarry.com/s/UUlXYOX175l -->
-                            <form id="bookingForm" method="post">
+                            
+                            <form id="bookingForm" >
                                 <div class="row g-3">
                                     <div class="col-md-12">
                                         <div class="form-floating">
@@ -337,10 +337,10 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-12 text-center  mb-3 mb-md-0">Copyright
-                            &copy; <a class="border-bottom" href="#">RAJA ROY PRAMOTORS</a>, All Right Reserved.
+                            &copy; <a class="border-bottom" href="#">RAJA ROY PRAMOTORS</a> All Rights Reserved.
     
     
-                            <a class="border-bottom" href="https://www.thepatternscompany.com/"></a>
+                            <a href="privacy-policy.html">Privacy Policy</a> | Designed By <a class="border-bottom" href="https://www.thepatternscompany.com/">The Patterns comapny.</a>
                         </div>
                        
                     </div>
@@ -379,76 +379,78 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- <script>
+    <script>
+        //book appointment
         document.getElementById("bookingForm").addEventListener("submit", function (event) {
-          event.preventDefault();
-      
-          // Get form data
-          var fullName = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-        
-          var number = document.getElementById("number").value;
-          var message = document.getElementById("message").value;
-          var subject = document.getElementById("subject").value;
-      
-          // Basic validation (check if required fields are filled)
-        //   if (!fullName || !email || !subject || !number) {
-        //     alert("Please fill in all required fields.");
-        //     return;
-        //   }
-      
-          // Prepare encoded message (consider server-side for security)
-          var encodedMessage = encodeURIComponent(
-            "Name: " + fullName + "\n" +
-            "Email: " + email + "\n" +
-            "Number: " + number + "\n" +
+            event.preventDefault();
+
+            var fullName = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
             
-            "Subject: " + subject + "\n" +
-            "Message: " + message
-          );
-      
-          // Mobile device, open WhatsApp
-          var whatsappLink = `mailto:rajaroypramotors21@gmail.com?text=${encodedMessage}`;
-          window.open(whatsappLink, "_blank");
-      
-          // Additional: Reset form and show thank you message
-          document.getElementById("thankYouMessage").style.display = "block";
-          document.getElementById("bookingForm").reset();
+
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+           
+            var contact = "+918885667888";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+                "Message: " +
+                message
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
         });
-      </script> -->
-      <script>
-        document.getElementById("bookingForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent default form submission
+    </script>
+    <script>
+        //book appointment
+        document.getElementById("booking").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-  // Collect data from the form
-  var fullName = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  // ... other data
+            var fullName = document.getElementById("Name").value;
+            var email = document.getElementById("Email").value;
+            
 
-  // Prepare data for sending to server (consider JSON format)
-  var formData = {
-    "name": fullName,
-    "email": email,
-    // ... other data fields
-  };
+            var number = document.getElementById("Number").value;
+          
+           
+            var contact = "+918885667888";
 
-  // Send data to server using AJAX (example using fetch API)
-  fetch('/form-process.php', {  // Replace with your server-side script path
-    method: 'POST',
-    body: JSON.stringify(formData),  // Send data as JSON
-  })
-  .then(response => response.json())  // Handle server response (if applicable)
-  .then(data => {
-    // Handle success (e.g., show a thank you message)
-    console.log("Success:", data);
-  })
-  .catch(error => {
-    // Handle errors (e.g., show an error message)
-    console.error("Error:", error);
-  });
-});
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number 
+                
+            );
 
-      </script>
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
 </body>
 
 </html>
