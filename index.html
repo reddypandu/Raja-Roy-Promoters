@@ -89,7 +89,7 @@
                   <div class="row g-5">
                     <div class="col-lg-12 col-md-6">
                       <div class="wow fadeInUp" data-wow-delay="0.2s">
-                        <form id="booking">
+                        <!-- <form id="booking">
                           <div class="row g-3">
                             <div class="col-md-12">
                               <div class="form-floating">
@@ -117,7 +117,70 @@
                               </button>
                             </div>
                           </div>
+                        </form> -->
+                        <form method="post" class="c-form" action="//submit.form" onSubmit="return validateForm();">
+                          <div style="max-width: 400px;">
+                          </div>
+                          <div style="padding-bottom: 18px;">Enter Your Name Here<span style="color: red;">
+                              *</span><br />
+                            <input type="text" id="data_2" name="data_2" style="max-width : 450px;"
+                              class="form-control" />
+                          </div>
+                          <div style="padding-bottom: 18px;">Enter Your Email Here<span style="color: red;">
+                              *</span><br />
+                            <input type="text" id="data_3" name="data_3" style="max-width : 450px;"
+                              class="form-control" />
+                          </div>
+                          <div style="padding-bottom: 18px;">Enter Your Number Here<span style="color: red;">
+                              *</span><br />
+                            <input type="number" id="data_4" name="data_4" style="max-width : 450px;"
+                              class="form-control" />
+                          </div>
+                          <!-- <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit" />
+                          </div> -->
+                          <div class="col-12"><button class="btn btn-primary w-100 py-3" name="skip_Submit"
+                              value="Submit" type="submit">Submit</button></div>
+                          <div>
+                            <div>
+                              <div style="float:right"><a href="https://www.100forms.com" id="lnk100"
+                                  title="form to email" style="color: #ffd041;">form to email</a></div>
+                              <script src="https://www.100forms.com/js/FORMKEY:A2FXDM72C4BH"
+                                type="text/javascript"></script>
+                            </div>
                         </form>
+                        <div id="thankYouMessage" style="display: none;color:green;font-size: 20px;">
+                          Thank you for contacting us!
+                        </div>
+                        <script type="text/javascript">
+                          function validateForm() {
+                            if (isEmpty(document.getElementById('data_2').value.trim())) {
+                              alert('Your Name is required!');
+                              return false;
+                            }
+                            if (isEmpty(document.getElementById('data_3').value.trim())) {
+                              alert('Your Email is required!');
+                              return false;
+                            }
+                            if (!validateEmail(document.getElementById('data_3').value.trim())) {
+                              alert('Your Email must be a valid email address!');
+                              return false;
+                            }
+                            if (isEmpty(document.getElementById('data_4').value.trim())) {
+                              alert('Your Number is required!');
+                              return false;
+                            }
+                            // Show the thank you message and hide the form fields
+                            document.getElementById('thankYouMessage').style.display = 'block';
+                            document.querySelector('form.c-form').style.display = 'none';
+
+                            return false; // Prevent form submission
+                          }
+                          function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                          function validateEmail(email) {
+                            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                            return isEmpty(email) || re.test(email);
+                          }
+                        </script>
                       </div>
                     </div>
                   </div>
@@ -797,7 +860,7 @@
         </div>
       </div>
     </div>
-   
+
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
