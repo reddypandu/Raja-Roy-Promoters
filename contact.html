@@ -76,7 +76,7 @@
                         </div>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                        <!-- <div class="nav-item dropdown book-free-visit">
+                        <div class="nav-item dropdown book-free-visit">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book A Free Visit</a>
                             <div class="dropdown-menu m-0 free-visit">
                                 <div class="container">
@@ -89,44 +89,81 @@
                                     <div class="row g-5">
                                         <div class="col-lg-12 col-md-6">
                                             <div class="wow fadeInUp" data-wow-delay="0.2s">
-                                                <form id="booking">
-                                                    <div class="row g-3">
-                                                        <div class="col-md-12">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" id="Name"
-                                                                    placeholder="Your Name" required />
-                                                                <label for="name">Enter Your Name*</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-floating">
-                                                                <input type="email" class="form-control email"
-                                                                    id="Email" placeholder="Your Email" required />
-                                                                <label for="email">Enter Your Email*</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control number"
-                                                                    id="Number" placeholder="Enter Your Number"
-                                                                    required />
-                                                                <label for="number">Enter Your Number*</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <button class="btn btn-primary w-100" type="submit">
-                                                                Book
-                                                            </button>
-                                                        </div>
+                                                <form  method="post" action="//submit.form" onSubmit="return validateForm();">
+                                                    <div style="max-width: 400px;">
+                                                    </div>
+                                                    <div class="col-12" style="padding-bottom: 18px;color: white;">Your Name<span
+                                                            style="color: red;">
+                                                            *</span><br />
+                                                        <input class="form-control" type="text" id="data_3"
+                                                            placeholder="Enter Your Name Here" name="data_3" class="form-control" />
+                                                    </div>
+                                                    <div class="col-12" style="padding-bottom: 18px;color: white;">Email<span
+                                                            style="color: red;">
+                                                            *</span><br />
+                                                        <input class="form-control" type="text" id="data_4"
+                                                            placeholder="Enter Your Email Here" name="data_4" class="form-control" />
+                                                    </div>
+                                                    <div class="col-12" style="padding-bottom: 18px;color: white;">Phone Number<span
+                                                            style="color: red;">
+                                                            *</span><br />
+                                                        <input placeholder="Enter Your Number Here" type="number" id="data_5" name="data_5"
+                                                            class="form-control" />
+                                                    </div>
+                                                 
+                                                    <!-- <div class="col-12 mb-3"><br />
+                                                        <textarea id="data_6" false name="data_6" class="form-control"
+                                                            placeholder="Leave a message here" id="message" row="5"></textarea>
+                                                    </div> -->
+                                                    <div class="col-12"><button class="btn btn-primary w-100 py-3" name="skip_Submit"
+                                                            value="Submit" type="submit">Submit</button></div>
+                                                    <div>
+                                                        <div style="float:right"><a href="https://www.100forms.com" id="lnk100"
+                                                                title="form to email" style="color: #ffd041">form to email</a></div>
+                                                        <script src="https://www.100forms.com/js/FORMKEY:2UWZ893R6QMX"
+                                                            type="text/javascript"></script>
                                                     </div>
                                                 </form>
+                                                <div id="thankYouMessage" style="display: none;color: white;font-size: 3;">
+                                                    Thank you for contacting us!
+                                                </div>
+                                                <script type="text/javascript">
+                                                    function validateForm() {
+                    
+                                                        if (isEmpty(document.getElementById('data_3').value.trim())) {
+                                                            alert('Your Name is required!');
+                                                            return false;
+                                                        }
+                                                        if (isEmpty(document.getElementById('data_4').value.trim())) {
+                                                            alert('Your Email is required!');
+                                                            return false;
+                                                        }
+                                                        if (!validateEmail(document.getElementById('data_4').value.trim())) {
+                                                            alert('Your Email must be a valid email address!');
+                                                            return false;
+                                                        }
+                                                        if (isEmpty(document.getElementById('data_5').value.trim())) {
+                                                            alert('Your Number is required!');
+                                                            return false;
+                                                        }
+                                                        // Show the thank you message and hide the form fields
+                                                        document.getElementById('thankYouMessage').style.display = 'block';
+                                                        
+                    
+                                                        return false; // Prevent form submission
+                                                    }
+                                                    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                                                    function validateEmail(email) {
+                                                        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                                                        return isEmpty(email) || re.test(email);
+                                                    }
+                                                </script>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </nav>
