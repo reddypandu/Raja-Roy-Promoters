@@ -77,92 +77,8 @@
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="contact.html" class="nav-item nav-link active">Contact</a>
                         <div class="nav-item dropdown book-free-visit">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book A Free Visit</a>
-                            <div class="dropdown-menu m-0 free-visit">
-                                <div class="container">
-                                    <div class="row mb-3 section-title position-relative text-center"
-                                        data-wow-delay="0.1s">
-                                        <h1 class="mb-3" style="font-size: 20px">
-                                            Contact For Any Query
-                                        </h1>
-                                    </div>
-                                    <div class="row g-5">
-                                        <div class="col-lg-12 col-md-6">
-                                            <div class="wow fadeInUp" data-wow-delay="0.2s">
-                                                <form  method="post" action="//submit.form" onSubmit="return validateForm();">
-                                                    <div style="max-width: 400px;">
-                                                    </div>
-                                                    <div class="col-12" style="padding-bottom: 18px;color: white;">Your Name<span
-                                                            style="color: red;">
-                                                            *</span><br />
-                                                        <input class="form-control" type="text" id="data_3"
-                                                            placeholder="Enter Your Name Here" name="data_3" class="form-control" />
-                                                    </div>
-                                                    <div class="col-12" style="padding-bottom: 18px;color: white;">Email<span
-                                                            style="color: red;">
-                                                            *</span><br />
-                                                        <input class="form-control" type="text" id="data_4"
-                                                            placeholder="Enter Your Email Here" name="data_4" class="form-control" />
-                                                    </div>
-                                                    <div class="col-12" style="padding-bottom: 18px;color: white;">Phone Number<span
-                                                            style="color: red;">
-                                                            *</span><br />
-                                                        <input placeholder="Enter Your Number Here" type="number" id="data_5" name="data_5"
-                                                            class="form-control" />
-                                                    </div>
-                                                 
-                                                    <!-- <div class="col-12 mb-3"><br />
-                                                        <textarea id="data_6" false name="data_6" class="form-control"
-                                                            placeholder="Leave a message here" id="message" row="5"></textarea>
-                                                    </div> -->
-                                                    <div class="col-12"><button class="btn btn-primary w-100 py-3" name="skip_Submit"
-                                                            value="Submit" type="submit">Submit</button></div>
-                                                    <div>
-                                                        <div style="float:right"><a href="https://www.100forms.com" id="lnk100"
-                                                                title="form to email" style="color: #ffd041">form to email</a></div>
-                                                        <script src="https://www.100forms.com/js/FORMKEY:2UWZ893R6QMX"
-                                                            type="text/javascript"></script>
-                                                    </div>
-                                                </form>
-                                                <div id="thankYouMessage" style="display: none;color: white;font-size: 3;">
-                                                    Thank you for contacting us!
-                                                </div>
-                                                <script type="text/javascript">
-                                                    function validateForm() {
-                    
-                                                        if (isEmpty(document.getElementById('data_3').value.trim())) {
-                                                            alert('Your Name is required!');
-                                                            return false;
-                                                        }
-                                                        if (isEmpty(document.getElementById('data_4').value.trim())) {
-                                                            alert('Your Email is required!');
-                                                            return false;
-                                                        }
-                                                        if (!validateEmail(document.getElementById('data_4').value.trim())) {
-                                                            alert('Your Email must be a valid email address!');
-                                                            return false;
-                                                        }
-                                                        if (isEmpty(document.getElementById('data_5').value.trim())) {
-                                                            alert('Your Number is required!');
-                                                            return false;
-                                                        }
-                                                        // Show the thank you message and hide the form fields
-                                                        document.getElementById('thankYouMessage').style.display = 'block';
-                                                        
-                    
-                                                        return false; // Prevent form submission
-                                                    }
-                                                    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-                                                    function validateEmail(email) {
-                                                        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-                                                        return isEmpty(email) || re.test(email);
-                                                    }
-                                                </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#contact" class="nav-link dropdown-toggle">Book A Free Visit</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -222,7 +138,7 @@
                     data-wow-delay="0.1s" style="max-width: 600px">
                     <h1 class="mb-3" style="color: #ffff">Contact For Any Query</h1>
                 </div>
-                <div class="row g-5">
+                <div class="row g-5" id="contact">
                     <div class="col-lg-7 col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             <!-- <form id="bookingForm">
@@ -310,7 +226,7 @@
                             </div>
                             <script type="text/javascript">
                                 function validateForm() {
-
+                                
                                     if (isEmpty(document.getElementById('data_3').value.trim())) {
                                         alert('Your Name is required!');
                                         return false;
@@ -327,12 +243,13 @@
                                         alert('Your Number is required!');
                                         return false;
                                     }
-                                    // Show the thank you message and hide the form fields
-                                    document.getElementById('thankYouMessage').style.display = 'block';
-                                    document.querySelector('form.c-form').style.display = 'none';
 
-                                    return false; // Prevent form submission
+                                    
+                                    return true;
+
+                                   
                                 }
+
                                 function isEmpty(str) { return (str.length === 0 || !str.trim()); }
                                 function validateEmail(email) {
                                     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
@@ -482,78 +399,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        //book appointment
-        document
-            .getElementById("bookingForm")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
 
-                var fullName = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
 
-                var number = document.getElementById("number").value;
-                var message = document.getElementById("message").value;
-
-                var contact = "+918885667888";
-
-                var encodedMessage = encodeURIComponent(
-                    "Name: " +
-                    fullName +
-                    "\n" +
-                    "Email: " +
-                    email +
-                    "\n" +
-                    "Number: " +
-                    number +
-                    "\n" +
-                    "Message: " +
-                    message
-                );
-
-                // Mobile device, open WhatsApp
-                var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
-                window.open(whatsappLink, "_blank");
-
-                // Additional: You can reset the form and show a thank you message if needed
-                document.getElementById("thankYouMessage").style.display = "block";
-                document.getElementById("bookingForm").reset();
-            });
-    </script>
-    <script>
-        //book appointment
-        document
-            .getElementById("booking")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                var fullName = document.getElementById("Name").value;
-                var email = document.getElementById("Email").value;
-
-                var number = document.getElementById("Number").value;
-
-                var contact = "+918885667888";
-
-                var encodedMessage = encodeURIComponent(
-                    "Name: " +
-                    fullName +
-                    "\n" +
-                    "Email: " +
-                    email +
-                    "\n" +
-                    "Number: " +
-                    number
-                );
-
-                // Mobile device, open WhatsApp
-                var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
-                window.open(whatsappLink, "_blank");
-
-                // Additional: You can reset the form and show a thank you message if needed
-                document.getElementById("thankYouMessage").style.display = "block";
-                document.getElementById("bookingForm").reset();
-            });
-    </script>
 </body>
 
 </html>
